@@ -52,9 +52,10 @@
   }
 }
 .menu {
+  height: 5.84vw;
   @media (max-width: 767px) {
     padding: 20px;
-    margin-bottom: 17px;
+    height: 22.84vw;
   }
   .logo {
     margin-top: 1.0417vw;
@@ -84,6 +85,54 @@
     @media (max-width: 767px) {
       display: none;
     }
+  }
+  .mobilemenu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 95vw;
+    height: 100vh;
+    background-color: #00392e;
+    z-index: 99999;
+    text-align: left;
+    list-style: none;
+    font-size: 5.332vw;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 15.23vw;
+    transition: left 1s;
+    @media (min-width: 768px) {
+      display: none;
+    }
+    li {
+      margin-bottom: 3.15vw;
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      &:first-child {
+        text-align: right;
+        padding-right: 2rem;
+      }
+    }
+  }
+}
+.menuButton {
+  background-color: #fccf00;
+  border: none;
+  border-radius: 50%;
+  padding: 3px 7px;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    cursor: pointer;
+  }
+  &.open {
+    float: right;
+    top: 2.66vw;
+    position: relative;
+  }
+  @media (min-width: 768px) {
+    display: none;
   }
 }
 section:nth-child(1) {
@@ -144,7 +193,7 @@ section:nth-child(1) {
         @media (max-width: 767px) {
           width: 90%;
           margin: auto;
-          font-size: 14px;
+          font-size: 3.332vw;
           line-height: 5vw;
         }
       }

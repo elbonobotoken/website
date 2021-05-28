@@ -34,6 +34,8 @@ import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
 
 function LandingPage2() {
+  const [menuLeft, setMenu] = useState(-1 * document.body.clientWidth)
+
   const [numLeft, setNum] = useState(0)
   const [winWidth, setWidth] = useState(document.body.clientWidth)
   const [moveleft, setLeft] = useState(0)
@@ -65,6 +67,13 @@ function LandingPage2() {
     }
     window.addEventListener("resize", handle)
   }, [])
+
+  const closeMenu = () => {
+    setMenu(-1 * document.body.clientWidth)
+  }
+  const openMenu = () => {
+    setMenu(0)
+  }
   return (
     <div className="main-block">
       <section>
@@ -72,12 +81,37 @@ function LandingPage2() {
           <div className="bonobo-content-card">
             <div className="menu">
               <img className="logo" src={logo} alt="logo" />
+              <span className="menuButton open" onClick={openMenu}>
+                ☰
+              </span>
               <ul className="menutab">
                 <li>Buy BONOBO</li>
                 <li>Tokenomics</li>
                 <li>Roadmap</li>
                 <li>White Paper Story</li>
                 <li>Dashboard</li>
+              </ul>
+              <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
+                <li>
+                  <span className="menuButton" onClick={closeMenu}>
+                    ✖
+                  </span>
+                </li>
+                <li>
+                  <a href="buyBonobo">Buy BONOBO</a>
+                </li>
+                <li>
+                  <a href="tokenomics">Tokenomics</a>
+                </li>
+                <li>
+                  <a href="roadmap">Roadmap</a>
+                </li>
+                <li>
+                  <a href="story">White Paper Story</a>
+                </li>
+                <li>
+                  <a href="dashboard">Dashboard</a>
+                </li>
               </ul>
             </div>
             <div className="col-md-9 float-left">
