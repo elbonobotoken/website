@@ -2,36 +2,37 @@ import React from "react"
 import "./LandingPage.scss"
 import { useState, useEffect } from "react"
 
-import g6 from "./img/Group6.png"
-import g71 from "./img/Group 71.png"
-import leaf_sun from "./img/leaf-sun.png"
-import instagramIcon from "./img/instagram.png"
-import discordIcon from "./img/discord.png"
-import telegramIcon from "./img/telegram.png"
-import twitterIcon from "./img/twitter.png"
+import g6 from "./img/Group 6.svg"
+import g71 from "./img/Group 7.svg"
+import leaf_sun from "./img/leaf-sun.svg"
+import instagramIcon from "./img/instagram.svg"
+import discordIcon from "./img/discord.svg"
+import telegramIcon from "./img/telegram.svg"
+import twitterIcon from "./img/twitter.svg"
 import bonobo from "./img/bonobo.png"
-import heart_vector from "./img/heart.png"
-import handshake_vector from "./img/handshake.png"
-import idea_vector from "./img/idea.png"
+import heart_vector from "./img/heart.svg"
+import handshake_vector from "./img/handshake.svg"
+import idea_vector from "./img/idea.svg"
 import bonobo_monkey_png from "./img/monkey.png"
 import bonobo_face_png from "./img/bonobo_face.png"
-import coin_svg from "./img/coin 2.png"
+import coin_svg from "./img/coin 2.svg"
 import speedometer_svg from "./img/speedometer1.svg"
-import S11 from "./img/s11.png"
-import s12_1 from "./img/s12-1.png"
-import s12_2 from "./img/s12-2.png"
+import S11 from "./img/s11.svg"
+import s12_1 from "./img/s12-1.svg"
+import s12_2 from "./img/s12-2.svg"
 import s12_3 from "./img/s12-3.png"
-import s12_4 from "./img/s12-4.png"
-import s12_5 from "./img/s12-5.png"
-import calendar_png from "./img/calendar.png"
-import next_png from "./img/next.png"
-import prev_png from "./img/prev.png"
-import logo from "./img/logo.png"
+import s12_4 from "./img/s12-4.svg"
+import s12_5 from "./img/s12-5.svg"
+import calendar_png from "./img/calendar.svg"
+import next_png from "./img/next.svg"
+import prev_png from "./img/prev.svg"
+import logo from "./img/logo.svg"
 import monkeyy from "./img/10.png"
 import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
 import team4 from "./img/team4.png"
+import { Link } from 'react-scroll'
 
 function LandingPage2() {
   const [menuLeft, setMenu] = useState(-1 * document.body.clientWidth)
@@ -85,11 +86,62 @@ function LandingPage2() {
                 ☰
               </span>
               <ul className="menutab">
-                <li>Buy BONOBO</li>
-                <li>Tokenomics</li>
-                <li>Roadmap</li>
-                <li>White Paper Story</li>
-                <li>Dashboard</li>
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="BONOBO"
+                  spy={true}
+                  smooth={true}
+                >Buy BONOBO</Link></li>
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="Tokenomics"
+                  spy={true}
+                  smooth={true}
+                >Tokenomics</Link></li>
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="Roadmap"
+                  spy={true}
+                  smooth={true}
+                >Roadmap</Link></li>
+                <li className="main_tab_pointer">White Paper</li>
+                <li className="main_tab_pointer"><div class="dropdown">
+                  <span class="dropbtn">Swing To</span>
+
+                  <div className="dropdown-content">
+                    <span className="drop_down_links">Rewards</span>
+                    <span className="drop_down_links">Cross Token Platform</span>
+                    <span className="drop_down_links">ScamScan</span>
+                    <span className="drop_down_links">Proof of Marketing</span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="Charity"
+                      spy={true}
+                      smooth={true}
+                    >Charity</Link></span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="Dashboard"
+                      spy={true}
+                      smooth={true}
+                    >Dashboard</Link></span>
+                    <span className="drop_down_links">Anti-Whale</span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="NFT"
+                      spy={true}
+                      smooth={true}
+                    >Comic NFT</Link></span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="team"
+                      spy={true}
+                      smooth={true}
+                    >Team</Link></span>
+                    <span className="drop_down_links">DAO</span>
+                  </div>
+
+                </div></li>
               </ul>
               <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
                 <li>
@@ -107,19 +159,33 @@ function LandingPage2() {
                   <a href="roadmap">Roadmap</a>
                 </li>
                 <li>
-                  <a href="story">White Paper Story</a>
+                  <a href="story">White Paper</a>
                 </li>
-                <li>
-                  <a href="dashboard">Dashboard</a>
-                </li>
+                <li><div class="dropdown">
+                  <span class="dropbtn2">Swing To</span>
+
+                  <div className="dropdown-content">
+                    <span className="drop_down_links">Rewards</span>
+                    <span className="drop_down_links">Cross Token Platform</span>
+                    <span className="drop_down_links">ScamScan</span>
+                    <span className="drop_down_links">Proof of Marketing</span>
+                    <span className="drop_down_links">Charity</span>
+                    <span className="drop_down_links">Dashboard</span>
+                    <span className="drop_down_links">Anti-Whale</span>
+                    <span className="drop_down_links">Comic NFT</span>
+                    <span className="drop_down_links">Team</span>
+                    <span className="drop_down_links">DAO</span>
+                  </div>
+
+                </div></li>
               </ul>
             </div>
             <div className="col-md-9 float-left">
-              <div className="bonobo-heading">
-                <strong>WELCOME TO THE </strong>
-                <h1>crypto jungle</h1>
+              <div className="bonobo-heading" id="BONOBO">
+                <strong className="linear_gradient_font_color">WELCOME TO THE </strong>
+                <h1 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">crypto</span> jungle</h1>
               </div>
-              <div className="bonobo-content">
+              <div className="bonobo-content" >
                 <p>
                   BONOBO coin is fun and bold attempt to use cryptocurrency to
                   improve the lives of both humans and our fellow inhabitants on
@@ -131,7 +197,7 @@ function LandingPage2() {
                   remits more effectively than traditional organizations.
                 </p>
               </div>
-              <div className="bonobo-button">
+              <div className="bonobo-button" >
                 <button className="yellow-btn">BUY BONOBOS</button>
               </div>
             </div>
@@ -144,8 +210,8 @@ function LandingPage2() {
       <section>
         <div className="s2-bonobo-content-card float-left">
           <div className="content">
-            <strong>WHY</strong>
-            <h2>Join El Bonobo</h2>
+            <strong className="linear_gradient_font_color">WHY</strong>
+            <h2 className="linear_gradient_font_color">Join <span className="linear_gradient_font_color2">El</span> Bonobo</h2>
             <ul>
               <li>
                 We're building a vibrant community that is fun and comes
@@ -192,7 +258,7 @@ function LandingPage2() {
       <div className="social-network-block">
         <div className="content">
           <div className="media-block float-left">
-            <span className="heading">Get in touch</span>
+            <span className="heading linear_gradient_font_color">Get in <span className="linear_gradient_font_color2">touch</span></span>
             <br />
             <a href="https://t.me/elbonobo_directory" target="blank">
               <img src={telegramIcon} alt="telegram-icon" />
@@ -219,8 +285,8 @@ function LandingPage2() {
       <section>
         <div className="content">
           <div className="s3-bonobo-heading-block">
-            <strong>SEE OUR</strong>
-            <h2>Core values</h2>
+            <strong className="linear_gradient_font_color">SEE OUR</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Core</span> values</h2>
           </div>
           <div className="s3-bonobo-main-block">
             <div className="card">
@@ -241,7 +307,7 @@ function LandingPage2() {
                   However we are serious about helping out Bonobos and other
                   primates in danger around the world. We welcome everyone to
                   donate to El Bonobo Charity. El Bonobo community will decide
-                  where the donations will go.
+                  where the Charity will go.
                 </p>
               </div>
             </div>
@@ -286,11 +352,11 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="Tokenomics">
         <div className="container-fluid">
           <div className="heading row">
-            <strong>LEARN MORE ABOUT OUR</strong>
-            <h2>Tokenomics</h2>
+            <strong className="linear_gradient_font_color">LEARN MORE ABOUT OUR</strong>
+            <h2 className="linear_gradient_font_color2">Tokenomics</h2>
           </div>
           <div className="s5-bonobo-content-main-block">
             <div className="s5-bonobo-content-block-1 float-left">
@@ -466,8 +532,8 @@ function LandingPage2() {
         <div className="content">
           <div className="s5-bonobo-heading-block">
             <div>
-              <div className="sub">HOW TO BUY</div>
-              <div className="main">Bonobo</div>
+              <div className="sub linear_gradient_font_color">HOW TO BUY</div>
+              <div className="main linear_gradient_font_color2">Bonobo</div>
             </div>
           </div>
           <div className="bonobo-content-block">
@@ -576,8 +642,8 @@ function LandingPage2() {
       <section>
         <div className="content">
           <div className="heading">
-            <strong>See our</strong>
-            <h2>Milestones Ticker</h2>
+            <strong className="linear_gradient_font_color">See our</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Milestones</span> Ticker</h2>
             <p>
               We implemented a concesus to visualize our Community Effort to
               push elbonobo all over the internet (mark please update)
@@ -719,12 +785,12 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="Roadmap">
         <div className="content">
           <div className="s9-bonobo-heading-block">
             <div>
-              <div className="sub">OUR</div>
-              <div className="main">Roadmap</div>
+              <div className="sub linear_gradient_font_color">OUR</div>
+              <div className="main linear_gradient_font_color2">Roadmap</div>
             </div>
           </div>
 
@@ -823,28 +889,28 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="Charity">
         <div className="content">
           <div className="s10-bonobo-content-card float-left">
-            <strong>MORE ABOUT</strong>
-            <h2>Donation</h2>
+            <strong className="linear_gradient_font_color">MORE ABOUT</strong>
+            <h2 className="linear_gradient_font_color2">Charity</h2>
             <p>
-              Donations to the El Bonobo Charity goes towards helping the less
+              Charity to the El Bonobo Charity goes towards helping the less
               than 50,000 bonobos left in the world. Bonobos share 98.7% of
-              their DNA with humans. Donations help in rescuing orphaned bonobos
+              their DNA with humans. Charity help in rescuing orphaned bonobos
               whose family has been killed for bushmeat or wild animals. They
               are then nursed by professionals who will release them into the
               wild when possible. Some bonobos lose their ability to survive in
               the wild so have to be taken care for by caregivers for the rest
-              of their lives. A large sum of your donations will go to education
+              of their lives. A large sum of your Charity will go to education
               and community development. Human poverty induces the hunting of
               bonobos for meat. Through <b>awareness programs </b> you will help
               save the lives of many bonobos and other endangered apes.
             </p>
             <p>
               The <b>El Bonobo community</b> will participating in how the
-              donations are used. Furthermore, the community will discuss future
-              implementations for how to fund for more donations, such as
+              Charity are used. Furthermore, the community will discuss future
+              implementations for how to fund for more Charity, such as
               possible royalties from El Bonobo comic strip NFTs, and other
               fundraisers. A holistic approach to helping Bonobos will be
               addressed in order to identify the best practice and long lasting
@@ -856,7 +922,7 @@ function LandingPage2() {
               all available social media.
             </p>
             <p>
-              A portion of donations only once approved by the community can be
+              A portion of Charity only once approved by the community can be
               put towards new dashboard features to help increase token value
               and conservation efforts.
             </p>
@@ -864,7 +930,7 @@ function LandingPage2() {
               href="https://www.notion.so/tokenfactory/Website-5953f52f3ba44c9eba362a556eaa2ebb"
               target="blank"
             >
-              <button className="yellow-btn">MAKE DONATION</button>
+              <button className="yellow-btn">MAKE Charity</button>
             </a>
           </div>
           <div className="monkey float-right">
@@ -872,17 +938,17 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      <section>
+      <section id="Dashboard">
         <div className="content">
           <div className="s11-block">
             <div className="s11-bonobo-content-card float-left">
-              <strong>OUR NEW</strong>
-              <h2>Dashboard</h2>
+              <strong className="linear_gradient_font_color">OUR NEW</strong>
+              <h2 className="linear_gradient_font_color2">Dashboard</h2>
               <p>
                 A slick dashboard that a monkey can understand will be
                 implemented with ideas from the community and professionals. El
                 Bonobo dashboard launches with transaction data including,
-                donations, and token data. Over time more tools will be
+                Charity, and token data. Over time more tools will be
                 available through the dashboard.
               </p>
               <p>
@@ -897,11 +963,11 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      <div className="section-12">
+      <div className="section-12" id="NFT">
         <div className="main">
           <div className="s12-bonobo-content-card loat-left">
-            <strong>El Bonobo Comic Strip</strong>
-            <h2>NFT Competition</h2>
+            <strong className="linear_gradient_font_color">El Bonobo Comic Strip</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">NFT</span> Competition</h2>
             <p>
               El Bonobo mascot illustration vector files are available for the
               community to test out their humor and creativeness. The best comic
@@ -924,12 +990,12 @@ function LandingPage2() {
           </div>
         </div>
       </div>
-      <section>
+      <section id="team">
         <div className="container-fluid">
           <div className="s13-bonobo-content-card float-left">
             <div>
-              <strong>MEET OUR</strong>
-              <h2>Team</h2>
+              <strong className="linear_gradient_font_color">MEET OUR</strong>
+              <h2 className="linear_gradient_font_color2">Team</h2>
               <p>
                 It is understandable that having a transparent team provides
                 trust in a project. However this is a project that goes beyond

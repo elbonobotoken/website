@@ -1153,7 +1153,7 @@ section:nth-child(8) {
   }
 }
 section:nth-child(9) {
-  background: url("./img/S9.png") no-repeat, #015f4d no-repeat center center;
+  background: url("./img/s9.png") no-repeat, #015f4d no-repeat center center;
   background-size: 100% 100%;
   padding: 9.37vw 18.385vw 7.1vw 18.385vw;
   height: auto;
@@ -1639,4 +1639,68 @@ section:nth-child(13) {
 }
 section:nth-child(14) {
   background-color: #002c24;
+}
+
+.dropbtn {
+  color: white;
+  font-size: 0.8333vw;
+  border: none;
+}
+
+.dropbtn {
+  color: white;
+
+  font-size: 0.8333vw;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: none;
+  position: absolute;
+  background: #00392e;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content .drop_down_links {
+  color: #fff;
+  cursor: pointer;
+  outline: inherit;
+  padding: 8px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+// .dropdown-content .drop_down_links:hover {
+//   background-color: #ddd;
+// }
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.main_tab_pointer {
+  cursor: pointer;
+}
+
+.linear_gradient_font_color {
+  background: linear-gradient(to right, green 0%, Yellow 100%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.linear_gradient_font_color2 {
+  background: linear-gradient(
+    to right,
+    rgb(157, 157, 235) 0%,
+    rgb(245, 92, 117) 100%
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
