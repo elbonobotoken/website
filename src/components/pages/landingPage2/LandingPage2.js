@@ -1,29 +1,33 @@
 import React from "react"
 import "./LandingPage.scss"
 import { useState, useEffect } from "react"
-import {SocialIcon} from "react-social-icons"
 
-import el1 from "./img/el-bonobo-1.png"
-import el2 from "./img/el-bonobo-2.png"
-import leaf_sun from "./img/el-bonobo-3.png"
+import g6 from "./img/Group 6.svg"
+import g71 from "./img/Group 7.svg"
+import leaf_sun from "./img/leaf-sun.svg"
+import instagramIcon from "./img/instagram.svg"
+import discordIcon from "./img/discord.svg"
+import telegramIcon from "./img/telegram.svg"
+import twitterIcon from "./img/twitter.svg"
 import bonobo from "./img/bonobo.png"
-import core_v1 from "./img/core_v1.svg"
-import core_v2 from "./img/core_v2.svg"
-import core_v3 from "./img/core_v3.svg"
-import scamometer from "./img/scamometer.svg"
-import monkeypair from "./img/monkeypair.svg"
-import coins from "./img/coins.svg"
+import heart_vector from "./img/heart.svg"
+import handshake_vector from "./img/handshake.svg"
+import idea_vector from "./img/idea.svg"
 import bonobo_monkey_png from "./img/monkey.png"
 import bonobo_face_png from "./img/bonobo_face.png"
-import coin_svg from "./img/coin2.svg"
-import footerlogo from "./img/footerlogo.svg"
+import coin_svg from "./img/coin 2.svg"
+import speedometer_svg from "./img/speedometer1.svg"
+import S11 from "./img/s11.svg"
 import s12_1 from "./img/s12-1.svg"
-import scamscan from "./img/scamscan.png"
-import heart from "./img/heart.png"
+import s12_2 from "./img/s12-2.svg"
+import s12_3 from "./img/s12-3.png"
+import s12_4 from "./img/s12-4.svg"
+import s12_5 from "./img/s12-5.svg"
 import calendar_png from "./img/calendar.svg"
 import next_png from "./img/next.svg"
 import prev_png from "./img/prev.svg"
 import logo from "./img/logo.svg"
+import monkeyy from "./img/10.png"
 import team1 from "./img/team1.png"
 import team2 from "./img/team2.png"
 import team3 from "./img/team3.png"
@@ -73,292 +77,289 @@ function LandingPage2() {
   }
   return (
     <div className="main-block">
-      <section id="head">
-        <div className="menu">
-          <img className="logo" src={logo} alt="logo" />
-          <span className="menuButton open" onClick={openMenu}>
-            ☰
-          </span>
-          <ul className="menutab">
-            <li className="main_tab_pointer">
-              <Link
-              activeClass="active"
-              to="join_el_bonobo"
-              spy={true}
-              smooth={true}
-            >Whitepaper</Link>
-            </li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="Roadmap"
-              spy={true}
-              smooth={true}
-            >Roadmap</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="marketing"
-              spy={true}
-              smooth={true}
-            >Marketing</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="scamscan"
-              spy={true}
-              smooth={true}
-            >Audit Service</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="charity"
-              spy={true}
-              smooth={true}
-            >Charity</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="Tokenomics"
-              spy={true}
-              smooth={true}
-            >Voting</Link></li>
-            <li className="main_tab_pointer connect_btn"><Link
-              activeClass="active"
-              to="team_donation"
-              spy={true}
-              smooth={true}
-            >Connect</Link></li>
-            {/* <li className="main_tab_pointer"><div className="dropdown">
-              <span className="dropbtn">Swing To</span>
-
-              <div className="dropdown-content">
-                <span className="drop_down_links">Rewards</span>
-                <span className="drop_down_links">Cross Token Platform</span>
-                <span className="drop_down_links">ScamScan</span>
-                <span className="drop_down_links">Proof of Marketing</span>
-                <span className="drop_down_links"><Link
-                  activeClass="active"
-                  to="Charity"
-                  spy={true}
-                  smooth={true}
-                >Charity</Link></span>
-                <span className="drop_down_links"><Link
-                  activeClass="active"
-                  to="Dashboard"
-                  spy={true}
-                  smooth={true}
-                >Dashboard</Link></span>
-                <span className="drop_down_links">Anti-Whale</span>
-                <span className="drop_down_links"><Link
-                  activeClass="active"
-                  to="NFT"
-                  spy={true}
-                  smooth={true}
-                >Comic NFT</Link></span>
-                <span className="drop_down_links"><Link
-                  activeClass="active"
-                  to="team"
-                  spy={true}
-                  smooth={true}
-                >Team</Link></span>
-                <span className="drop_down_links">DAO</span>
-              </div>
-
-            </div></li> */}
-          </ul>
-          <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
-            <li>
-              <span className="menuButton" onClick={closeMenu}>
-                ✖
-              </span>
-            </li>
-            <li className="main_tab_pointer">
-              <Link
-              activeClass="active"
-              to="join_el_bonobo"
-              spy={true}
-              smooth={true}
-            >Whitepaper</Link>
-            </li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="Roadmap"
-              spy={true}
-              smooth={true}
-            >Roadmap</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="marketing"
-              spy={true}
-              smooth={true}
-            >Marketing</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="scamscan"
-              spy={true}
-              smooth={true}
-            >Audit Service</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="charity"
-              spy={true}
-              smooth={true}
-            >Charity</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="Tokenomics"
-              spy={true}
-              smooth={true}
-            >Voting</Link></li>
-            <li className="main_tab_pointer"><Link
-              activeClass="active"
-              to="team_donation"
-              spy={true}
-              smooth={true}
-            >Connect</Link></li>
-          </ul>
-        </div>
-      </section>
-      <section id="crypto_jungle">
+      <section>
         <div className="content">
-          <div className="bonobo-content-card d-flex align-items-center">
+          <div className="bonobo-content-card">
+            <div className="menu">
+              <img className="logo" src={logo} alt="logo" />
+              <span className="menuButton open" onClick={openMenu}>
+                ☰
+              </span>
+              <ul className="menutab">
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="BONOBO"
+                  spy={true}
+                  smooth={true}
+                >Buy BONOBO</Link></li>
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="Tokenomics"
+                  spy={true}
+                  smooth={true}
+                >Tokenomics</Link></li>
+                <li className="main_tab_pointer"><Link
+                  activeClass="active"
+                  to="Roadmap"
+                  spy={true}
+                  smooth={true}
+                >Roadmap</Link></li>
+                <li className="main_tab_pointer">White Paper</li>
+                <li className="main_tab_pointer"><div class="dropdown">
+                  <span class="dropbtn">Swing To</span>
+
+                  <div className="dropdown-content">
+                    <span className="drop_down_links">Rewards</span>
+                    <span className="drop_down_links">Cross Token Platform</span>
+                    <span className="drop_down_links">ScamScan</span>
+                    <span className="drop_down_links">Proof of Marketing</span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="Charity"
+                      spy={true}
+                      smooth={true}
+                    >Charity</Link></span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="Dashboard"
+                      spy={true}
+                      smooth={true}
+                    >Dashboard</Link></span>
+                    <span className="drop_down_links">Anti-Whale</span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="NFT"
+                      spy={true}
+                      smooth={true}
+                    >Comic NFT</Link></span>
+                    <span className="drop_down_links"><Link
+                      activeClass="active"
+                      to="team"
+                      spy={true}
+                      smooth={true}
+                    >Team</Link></span>
+                    <span className="drop_down_links">DAO</span>
+                  </div>
+
+                </div></li>
+              </ul>
+              <ul className="mobilemenu" style={{ left: menuLeft + "px" }}>
+                <li>
+                  <span className="menuButton" onClick={closeMenu}>
+                    ✖
+                  </span>
+                </li>
+                <li>
+                  <a href="buyBonobo">Buy BONOBO</a>
+                </li>
+                <li>
+                  <a href="tokenomics">Tokenomics</a>
+                </li>
+                <li>
+                  <a href="roadmap">Roadmap</a>
+                </li>
+                <li>
+                  <a href="story">White Paper</a>
+                </li>
+                <li><div class="dropdown">
+                  <span class="dropbtn2">Swing To</span>
+
+                  <div className="dropdown-content">
+                    <span className="drop_down_links">Rewards</span>
+                    <span className="drop_down_links">Cross Token Platform</span>
+                    <span className="drop_down_links">ScamScan</span>
+                    <span className="drop_down_links">Proof of Marketing</span>
+                    <span className="drop_down_links">Charity</span>
+                    <span className="drop_down_links">Dashboard</span>
+                    <span className="drop_down_links">Anti-Whale</span>
+                    <span className="drop_down_links">Comic NFT</span>
+                    <span className="drop_down_links">Team</span>
+                    <span className="drop_down_links">DAO</span>
+                  </div>
+
+                </div></li>
+              </ul>
+            </div>
             <div className="col-md-9 float-left">
               <div className="bonobo-heading" id="BONOBO">
-                <h1 className="linear_gradient_font_color">Welcome To the <span className="linear_gradient_font_color2">Crypto</span> Jungle</h1>
+                <strong className="linear_gradient_font_color">WELCOME TO THE </strong>
+                <h1 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">crypto</span> jungle</h1>
               </div>
-              <div className="bonobo-content">
-                <h5>The world's <span>1st</span> community driven <span>Marketing Launchpad</span> and Decentralized Auditing</h5>
-                <br></br>
-                <SocialIcon url="https://twitter.com/ElBonoboCoin" network="twitter" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="reddit" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="https://t.me/elbonobo_directory" network="telegram" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="medium" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="https://discord.gg/cpyHNheF4Y" network="discord" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="facebook" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="https://instagram.com/ElBonoboCoin" network="instagram" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="youtube" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="tiktok" bgColor="#015f4d" fgColor="#fff"/>
-                <SocialIcon url="#" network="github" bgColor="#015f4d" fgColor="#fff"/>
+              <div className="bonobo-content" >
+                <p>
+                  BONOBO coin is fun and bold attempt to use cryptocurrency to
+                  improve the lives of both humans and our fellow inhabitants on
+                  earth, in a decentralized manner.
+                </p>
+                <p>
+                  It is also a social experiment that will test the ability of
+                  Distributed Anonymous Organizations (DAO) to perform their
+                  remits more effectively than traditional organizations.
+                </p>
               </div>
               <div className="bonobo-button" >
-                <button className="green-btn">ScamScan <span><img src={scamscan}></img></span></button>
-                <img className="coins" src={coins} alt="coins" />
-                <button className="yellow-btn">Ape</button>
+                <button className="yellow-btn">BUY BONOBOS</button>
               </div>
             </div>
-            <div className="col-md-3 text-center">
+            <div className="col-md-3 float-left">
               <img className="bonobo" src={bonobo} alt="bonobo" />
             </div>
           </div>
         </div>
       </section>
-      
-      <section id="join_el_bonobo">
+      <section>
         <div className="s2-bonobo-content-card float-left">
           <div className="content">
-            <h2 className="">What is El Bonobo?</h2>
-            <p>BONOBO coin is fun and bold attempt to use cryptocurrency to improve the lives of both humans and our fellow inhabitants on earth, in a decentralized manner. It is also a social experiment that will test the ability of  Distributed Anonymous Organizations (DAO) to perform  their remits more effectively than traditional organizations.</p>
-            
-            <h2>Join us!</h2>
+            <strong className="linear_gradient_font_color">WHY</strong>
+            <h2 className="linear_gradient_font_color">Join <span className="linear_gradient_font_color2">El</span> Bonobo</h2>
             <ul>
-              <li>We’re building a vibrant community that is fun and comes together to improve their lives and those of others, whilst working to raise awareness and funds for wildlife conservation.</li>
-              <li>A professional and talented team committed to making this vision a reality.</li>
-              <li>Transparent technology implemented using best practice. There can be no “rug-pull”.</li>
+              <li>
+                We're building a vibrant community that is fun and comes
+                together to improve their lives and those of others, whilst
+                working to raise awareness and funds for wildlife conservation.
+              </li>
+              <li>
+                A professional and talented team committed to making this vision
+                a reality.
+              </li>
+              <li>
+                Transparent technology implemented using best practice. There
+                can be no "rug-pull".
+              </li>
               <li>Tokenomics that make sense.</li>
             </ul>
-            <p>There future of El Bonobo is full DAO. Creating an effective conservation structure is the aim.</p>
-            <p>And the fun doesn’t end there. A meme maker package is available for creativity and humor. There is also a comic strip competition where the winning strips are turned into NFT for the creator to gain more rewards. Moreover, adventure and travel awaits those that want to visit conservation efforts around the world.</p>
-           
+            <p>
+              Holders of BONOBO automatically accrue their share of 3% of all
+              transaction fees and 3% goes towards conservation efforts of
+              endangered animals around the world.
+            </p>
+            <p>
+              <b>
+                There future of El Bonobo is full DAO. Creating an effective
+                conservation structure is the aim.
+              </b>
+            </p>
+            <p>
+              And the fun doesn't end there. A meme maker package is available
+              for creativity and humor. There is also a comic strip competition
+              where the winning strips are turned into NFT for the creator to
+              gain more rewards. Moreover, adventure and travel awaits those
+              that want to visit conservation efforts around the world.
+            </p>
+            <button className="yellow-btn">JOIN BONOBO</button>
           </div>
         </div>
         <div className="imgs float-left">
-          <img src={el1} width="50%" alt="g6" />
-          <img src={el2} width="50%" alt="g7" />
+          <img src={g6} width="50%" alt="g6" />
+          <img src={g71} width="50%" alt="g7" />
           <img className="leftsun" src={leaf_sun} width="100%" alt="leftsun" />
         </div>
       </section>
-
-      <div id="marketing">
-        <div className="content d-flex align-items-end">
-          <div className="col-md-5 float-left">
-            <h2 className="heading">Be a part of our Marketing Community</h2>
-            <p>Start making money and benefits from our reward system</p>
+      <div className="social-network-block">
+        <div className="content">
+          <div className="media-block float-left">
+            <span className="heading linear_gradient_font_color">Get in <span className="linear_gradient_font_color2">touch</span></span>
+            <br />
+            <a href="https://t.me/elbonobo_directory" target="blank">
+              <img src={telegramIcon} alt="telegram-icon" />
+            </a>
+            <a href="https://discord.gg/cpyHNheF4Y" target="blank">
+              <img src={discordIcon} alt="discord-icon" />
+            </a>
+            <a href="https://twitter.com/ElBonoboCoin" target="blank">
+              <img src={twitterIcon} alt="twitter-icon" />
+            </a>
+            <a href="https://twitter.com/ElBonoboCoin" target="blank">
+              <img src={instagramIcon} alt="instagram-icon" />
+            </a>
           </div>
-          <div className="col-md-3 text-center">
-            <button className="green-btn">Join</button>
-          </div>
-          <div className="col-md-4 text-center">
-            <img src={s12_1} alt="" />
+          <div className="email-block float-left">
+            <p>Get exclusive updates and community announcements:</p>
+            <label>Enter your email:</label>
+            <br />
+            <input type="email" placeholder="Email" />
+            <button className="green-btn">Send</button>
           </div>
         </div>
       </div>
-      
-      <section id="core_values">
+      <section>
         <div className="content">
           <div className="s3-bonobo-heading-block">
-            <h2 className="">Core values</h2>
+            <strong className="linear_gradient_font_color">SEE OUR</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Core</span> values</h2>
           </div>
-          <div className="s3-bonobo-main-block d-flex">
-            <div className="card text-center">
+          <div className="s3-bonobo-main-block">
+            <div className="card">
               <div className="card-svg">
                 <img
-                  src={core_v1}
+                  src={heart_vector}
                   className="heart-img"
                   alt="heart_vector"
                 />
               </div>
-              <div className="card-heading"><span>Distributed</span></div>
+              <div className="card-heading">
+                <span>Giving</span>
+              </div>
               <div className="card-content">
-                <p>Earn rewards by participating in ScamScan and Distributed Marketing and more. Community building by transcending the value of the platform through positive performance. </p>
+                <p>
+                  El bonobo token is full of fun and games and sharing, we want
+                  everyone to make huge gains and have fun while doing it.
+                  However we are serious about helping out Bonobos and other
+                  primates in danger around the world. We welcome everyone to
+                  donate to El Bonobo Charity. El Bonobo community will decide
+                  where the Charity will go.
+                </p>
               </div>
             </div>
-            <div className="card text-center">
+            <div className="card">
               <div className="card-svg">
                 <img
                   className="handshake-img"
-                  src={core_v2}
+                  src={handshake_vector}
                   alt="handshake_vector"
                 />
               </div>
               <div className="card-heading">
-                <span>Democratic</span>
+                <span>Togetherness</span>
               </div>
               <div className="card-content">
-                <p>Building towards a fully Decentralized Autonomous Organization with fair participation equity.  No owners, merit based curation and platform evolution on demand.</p>
+                <p>
+                  Our community of fun loving crypto swinging apes, are
+                  supportive and informative. Working together to help all apes
+                  get that bag! With &nbsp;
+                  <strong>Free Life Changer Raffles,&nbsp;</strong>
+                  everyone can enjoy El Bonobo's gifts.
+                </p>
               </div>
             </div>
-            <div className="card text-center">
+            <div className="card">
               <div className="card-svg">
-                <img src={core_v3} className="idea-img" alt="idea_vector" />
+                <img src={idea_vector} className="idea-img" alt="idea_vector" />
               </div>
               <div className="card-heading">
-                <span>Transparency</span>
+                <span>Understanding</span>
               </div>
               <div className="card-content">
-                <p>Scalability requires transparency in all aspects of the platform. Accounting, decision making, open source code and open knowledge. This is the long term commitment towards a sustainable future.</p>
+                <p>
+                  Transparency and forward thinking pumps the blood in El
+                  Bonobo's heart. The future of El bonobo depends on community
+                  and committed long-term vision. Inquiries and ideas from all
+                  fellow apes are taken into account to evolve El Bonobo towards
+                  a sustainable future.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <div id="scamscan">
-        <div className="content d-flex align-items-end">
-          <div className="col-md-5 float-left">
-            <h2 className="heading">ScamScan</h2>
-            <p>A decentralized audit service</p>
-            <h5>The best results of an audit service is, if you have the community involved. Swarm intelligence. Our audit service is free.</h5>
-          </div>
-          <div className="col-md-3 text-center">
-            <button className="green-btn">Join</button>
-          </div>
-          <div className="col-md-4 text-center">
-            <img src={scamometer} alt="" />
-          </div>
-        </div>
-      </div>
-
       <section id="Tokenomics">
-        <div className="content">
-          <h2>Tokenomics</h2>
-          <div className="s5-bonobo-content-main-block d-flex align-items-center">
-            <div className="col-md-6 block-1">
+        <div className="container-fluid">
+          <div className="heading row">
+            <strong className="linear_gradient_font_color">LEARN MORE ABOUT OUR</strong>
+            <h2 className="linear_gradient_font_color2">Tokenomics</h2>
+          </div>
+          <div className="s5-bonobo-content-main-block">
+            <div className="s5-bonobo-content-block-1 float-left">
               <div className="card-1">
                 <div>
                   <strong>10 %</strong>
@@ -370,27 +371,63 @@ function LandingPage2() {
                 </div>
                 <div>
                   <strong>3%</strong>
-                  <span className="c1">Community Reward.</span>
+                  <span className="c1">Wildlife Conservation Fund</span>
+                </div>
+                <div>
+                  <strong>2 %</strong>
+                  <span className="c1">
+                    auto added to the liquidity pool and locked 3 years.
+                  </span>
+                </div>
+                <div>
+                  <strong>1 %</strong>
+                  <span className="c1">Project Fund</span>
                 </div>
                 <div>
                   <strong>2 %</strong>
                   <span className="c1">Burned</span>
                 </div>
-                <div>
-                  <strong>1 %</strong>
-                  <span className="c1">Wildlife Conservation Fund.</span>
-                </div>
               </div>
-              <br></br>
-              <div className="card-2 ">
-                  <div className="card-body text-center">
-                    <img src={coin_svg} alt="coin_svg" />
-                    <h5>Anti-Whale Measures</h5>
-                    <p>Transfers more than 0.5% (current ratio) of the total supply will be rejected. As the total supply grows, this ratio will be reduced. Deposit or withdraw tokens to the farms will not be subject to this restriction.</p>
+              <div className="s5-bonobo-content-block-sub-child">
+                <div className="card-2 ">
+                  <div className="card-heading">Max Supply</div>
+                  <div className="card-body">
+                    <div>
+                      <strong>Max Supply:</strong>
+                      <br />
+                      <span>100% - 7,900,000,000 Token</span>
+                    </div>
+                    <div>
+                      <strong>Public Supply:</strong>
+                      &nbsp;95%
+                      <br />
+                      &nbsp;&nbsp;&nbsp;Pre-sale: 20%
+                      <br />
+                      &nbsp;&nbsp;&nbsp;ILO: 75%
+                      <br />
+                    </div>
+                    <div>
+                      <strong>Community Incentives:</strong>
+                      <span> &nbsp;5%</span>
+                    </div>
                   </div>
                 </div>
+                <div className="card-3 ">
+                  <div className="card-heading">Token Release Schedule</div>
+                  <ul>
+                    <li>
+                      LP is released 3 years from lock date. After 3 years these
+                      funds are released with a set schedule to the team and/or
+                      DAO, whichever is in place.
+                    </li>
+                    <li>
+                      Team tokens are released according to a set schedule tbd
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="col-md-6 block-2">
+            <div className="s5-bonobo-content-block-2 float-left">
               <div className="bonobo-head-svg-block">
                 <img className="face" src={bonobo_face_png} alt="bonobo_face" />
                 <img
@@ -400,22 +437,107 @@ function LandingPage2() {
                 />
               </div>
               <div className="card-1">
-                <h5>Total Supply - <span>100% <br></br>7,900,000,000</span> Token</h5>
-                <h6>Airdrop - <span>20% <br></br>1,580,000,000</span> Token</h6>
-                <h6>Public Sale - <span>62.56% <br></br> 4,942,240,000</span> Token</h6>
-                <h6>Liquidity - <span>15.64% <br></br> 1,235,560,000</span> Token</h6>
-                <h6>Unicrypt Fee - <span>1.8% <br></br> 142,200,000</span> Token</h6>
+                <div className="card-heading">Tokenomics Explanation</div>
+                <p>
+                  When you purchase BONOBO Tokens, 10% is used as a transaction
+                  fee.
+                </p>
+                <ul>
+                  <li>
+                    <span>3%</span>
+                    &nbsp;is distributed to everyone that has a token, so that
+                    whenever someone transacts BONOBOs, you also get a
+                    percentage! The more BONOBOs you hold, the more rewards you
+                    receive.
+                  </li>
+                  <li>
+                    <span>2%</span> is added to the Liquidity Pool to better
+                    leverage BONOBO tokens. After 3 years these funds are
+                    released with a set schedule to the team and/or DAO,
+                    whichever is in place.
+                  </li>
+                  <li>
+                    <span>3%</span> goes to our Wildlife Conservation Fund of
+                    which the community works together in strategies to help
+                    animals in danger around the world.
+                  </li>
+                  <li>
+                    <span>1%</span> for development.
+                  </li>
+                  <li>
+                    <span>1%</span> is burned to lessen the total supply and
+                    increase the value of held tokens.
+                  </li>
+                </ul>
+                <p>There will only be 7,900,000,000 Tokens minted.</p>
+                <ul>
+                  <li>
+                    <span>95%</span> is public supply, 20% of which will be
+                    available during pre-sale.
+                  </li>
+                  <li>
+                    <span>5%</span> is held to for the community to incentivize
+                    each other.
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <section id="Bonobo">
+      <div className="social-info-block">
         <div className="content">
-          <h2><span>How to buy El BONOBO's</span> <img className="coins" src={coins} alt="coins" /></h2>
+          <div className="content-block">
+            <div className="coin-card">
+              <div className="coin-svg">
+                <img src={coin_svg} alt="coin_svg" />
+              </div>
+              <div className="txt-heading">
+                Anti-Whale
+                <br />
+                Measures
+              </div>
+              <div className="txt-content">
+                <p>
+                  Transfers more than 0.5% (current ratio) of the total supply
+                  will be rejected. As the total supply grows, this ratio will
+                  be reduced. Deposit or withdraw tokens to the farms will not
+                  be subject to this restriction.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="content-block">
+            <div className="speedometer-card">
+              <div className="speedometer-svg">
+                <img src={speedometer_svg} alt="speedometer_svg" />
+              </div>
+              <div className="txt-heading">
+                Rug <br />
+                proof
+              </div>
+              <div className="txt-content">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus malesuada iaculis bibendum. Integer et erat interdum
+                  sapien commodo fringilla ut sed nisi. Pellentesque efficitur
+                  tempus lectus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div className="content">
+          <div className="s5-bonobo-heading-block">
+            <div>
+              <div className="sub linear_gradient_font_color">HOW TO BUY</div>
+              <div className="main linear_gradient_font_color2">Bonobo</div>
+            </div>
+          </div>
           <div className="bonobo-content-block">
-            <div className="card step-1 col-4">
+            <div className="card step-1">
               <div className="child-card c1">
                 <div className="step step-num-1">
                   <div>
@@ -432,7 +554,7 @@ function LandingPage2() {
                 </div>
               </div>
             </div>
-            <div className="card step-2 col-4">
+            <div className="card step-2">
               <div className="child-card c2">
                 <div className="step step-num-2">
                   <div>
@@ -447,7 +569,7 @@ function LandingPage2() {
                 </div>
               </div>
             </div>
-            <div className="card step-3 col-4">
+            <div className="card step-3">
               <div className="child-card c3">
                 <div className="step step-num-3">
                   <div>
@@ -466,7 +588,7 @@ function LandingPage2() {
                 </div>
               </div>
             </div>
-            <div className="card step-4 col-4">
+            <div className="card step-4">
               <div className="child-card c4">
                 <div className="step step-num-4">
                   <div>
@@ -517,97 +639,11 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      
-      <section id="Roadmap">
+      <section>
         <div className="content">
-          <h2>Roadmap</h2>
-
-          <div className="content-card-blocks row">
-            <div className="content-card-block-1 col-6">
-              <div className="content-block-1-card-1 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Community</li>
-                    <li>Launch ScamScan Ecosystem</li>
-                    <li>Setup Marketing Ecosystem</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="content-block-1-card-2 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Add El Bonobo Team members from community</li>
-                    <li>Release Bonobo easy meme | comic maker Ai & PSD</li>
-                    <li>Start El Bonobo’s Adventures Comic Strip competition</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="content-block-1-card-3 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Finalize DAO smart contracts with community</li>
-                    <li>Semi DAO new developer participation</li>
-                    <li>First ticket to meet El Bonobo’s family in the DRC</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div className="content-card-block-2 col-6">
-              <div className="content-block-2-card-1 card">
-                <div>
-                  <div style={{backgroundColor: '#fccf00'}}>Start</div>
-                  <ul>
-                    <li>El Bonobo Token Launch Website and Social Media</li>
-                    <li>Setup ScamScan enviroment</li>
-                    <li>Setup vote.elbonobo.com Snapshot enviroment</li>
-                    <li>Setup Marketing enviroment</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="content-block-2-card-2 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Introduce El Bonobo’s family</li>
-                    <li>Pool Conservation Ideas from community</li>
-                    <li>New listing locations</li>
-                    <li>NFT El Bonobo’s Adventures Comic Strips</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="content-block-2-card-3 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Doxing. Team reveal</li>
-                    <li>Define DAO smart agreements</li>
-                    <li>Audit bonobo conservation and rescue missions</li>
-                    <li>Enhance community and conservation engagement</li>
-                  </ul>
-                </div>
-              </div>
-              <div className="content-block-2-card-4 card">
-                <div>
-                  <div>Upcoming</div>
-                  <ul>
-                    <li>Semi DAO review | Audit</li>
-                    <li>Full DAO | All power goes to community</li>
-                    <li>Anoint El Bonobo as new King on our Planet of Apes</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <section id="milestones_ticker">
-        <div className="content">
-            <h2>Milestones Ticker</h2>
-          <div className="heading text-center">
+          <div className="heading">
+            <strong className="linear_gradient_font_color">See our</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">Milestones</span> Ticker</h2>
             <p>
               We implemented a concesus to visualize our Community Effort to
               push elbonobo all over the internet (mark please update)
@@ -749,136 +785,266 @@ function LandingPage2() {
           </div>
         </div>
       </section>
-      
-      <div id="charity">
-        <div className="content d-flex align-items-center">
-          <div className="col-md-4 py-2">
-            <h2 className="heading">Charity <img src={heart} style={{width: '50px'}} /></h2>
-            <h5 className="py-2">1% tax fee  of every transaction will be donated to a charity you vote for.</h5>
-            <button className="green-btn">Info</button>
-          </div>
-          <div className="col-md-4 text-center  py-2">
-            <p>For Bonobo X Foundation</p>
-            <img className="monkeys" src={monkeypair} alt="" />
-          </div>
-          <div className="col-md-4 charity_wallet py-2">
-            <p>Wallet</p>
-            <button className="green-btn"><b>USD</b> Received</button>
-            <br></br>
-            <br></br>
-            <button className="green-btn"><b>USD</b> Donated</button>
-          </div>
-        </div>
-      </div>
-
-      <section id="team">
-        <div className="content d-flex">
-          <div className="col-md-4 s13-bonobo-content-card">
-              <h2>Team</h2>
-              <p><strong>About</strong></p>
-              <p>We are a team of independent, hardworking entrepreneurs from different expertise.</p>
-              <p>Who have no fear of pushing technological boundaries and transforming knowledge into reality. We are goal oriented, team centered, and non egocentric.</p>
-              <p><strong>Our KODEX</strong></p>
-              <ul>
-                <li>Be transparent</li>
-                <li>Community first</li>
-                <li>Democratic thinking</li>
-                <li>Open Source</li>
-                <li>Open Knowledge</li>
-                <li>Share and caring</li>
-                <li>Education first</li>
-                <li>Decentralized Thinking</li>
-                <li>Distributed Mindest</li>
-              </ul>
-              <button className="yellow-btn">continue...</button>
-          </div>
-          <div className="col-md-8 s13-img-block">
-            <div className="fline">
-              <img src={team1} alt="" />
-              <p>The Developer</p>
-            </div>
+      <section id="Roadmap">
+        <div className="content">
+          <div className="s9-bonobo-heading-block">
             <div>
-              <img src={team2} alt="" />
-              <p>The Campaign Manager and Auditor</p>
+              <div className="sub linear_gradient_font_color">OUR</div>
+              <div className="main linear_gradient_font_color2">Roadmap</div>
             </div>
-            <div className="sline">
-              <img src={team3} alt="" />
-              <p>The Architect and Researcher</p>
+          </div>
+
+          <div className="content-card-blocks row">
+            <div className="content-card-block-1 col-6">
+              <div className="content-block-1-card-1 card">
+                <div>
+                  <div> 2021 Q3 </div>
+                  <ul>
+                    <li>BSC checker audit</li>
+                    <li>Release Bonobo easy meme | comic maker Ai & PSD</li>
+
+                    <li>
+                      Start El Bonobo’s Adventures Comic Strip competition
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="content-block-1-card-2 card">
+                <div>
+                  <div> 2022 Q1</div>
+                  <ul>
+                    <li>Add El Bonobo Team members from community</li>
+
+                    <li>First Mission: Rescue El bonobo’s friends</li>
+                    <li>Start album of rescued animals</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="content-block-1-card-3 card">
+                <div>
+                  <div> 2022 Q3</div>
+                  <ul>
+                    <li>Finalize DAO smart contracts with community</li>
+
+                    <li>Semi DAO new developer participation</li>
+
+                    <li>First ticket to meet El Bonobo’s family in the DRC</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <div className="sline">
-              <img src={team4} alt="" />
-              <p>You!</p>
-              <button className="yellow-btn" style={{marginLeft: '5vw'}}>Join</button>
+            <div className="content-card-block-2 col-6">
+              <div className="content-block-2-card-1 card">
+                <div>
+                  <div>2021 Q2</div>
+                  <ul>
+                    <li>Launch Website</li>
+                    <li>Token Launch on Pancake Swap</li>
+
+                    <li>Start social networking community and marketing</li>
+                    <li>Dashboard implementation</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="content-block-2-card-2 card">
+                <div>
+                  <div> 2021 Q4</div>
+                  <ul>
+                    <li>Introduce El Bonobo’s family</li>
+
+                    <li>Pool Conservation Ideas from community</li>
+
+                    <li>New listing locations</li>
+                    <li>NFT El Bonobo’s Adventures Comic Strips</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="content-block-2-card-3 card">
+                <div>
+                  <div> 2022 Q2</div>
+                  <ul>
+                    <li>Doxing. Team reveal</li>
+
+                    <li>Define DAO smart agreements</li>
+
+                    <li>Audit bonobo conservation and rescue missions</li>
+
+                    <li>Enhance community and conservation engagement</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="content-block-2-card-4 card">
+                <div>
+                  <div> 2022 Q4</div>
+                  <ul>
+                    <li>Semi DAO review | Audit</li>
+
+                    <li>Full DAO | All power goes to community</li>
+
+                    <li>Anoint El Bonobo as new King on our Planet of Apes</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      
-      <div id="team_donation">
-        <div className="content d-flex align-items-center">
-          <div className="col-md-6 py-2 px-5">
-            <h2 className="heading">Team Donation</h2>
-            <h5 className="py-2">We welcome everyone to contribute to the El Bonobo Core Team. Public Donation means for us public transparency. We will publish any spend. (mark rewrite)</h5>
-            <img src={coins} alt="" />
+      <section id="Charity">
+        <div className="content">
+          <div className="s10-bonobo-content-card float-left">
+            <strong className="linear_gradient_font_color">MORE ABOUT</strong>
+            <h2 className="linear_gradient_font_color2">Charity</h2>
+            <p>
+              Charity to the El Bonobo Charity goes towards helping the less
+              than 50,000 bonobos left in the world. Bonobos share 98.7% of
+              their DNA with humans. Charity help in rescuing orphaned bonobos
+              whose family has been killed for bushmeat or wild animals. They
+              are then nursed by professionals who will release them into the
+              wild when possible. Some bonobos lose their ability to survive in
+              the wild so have to be taken care for by caregivers for the rest
+              of their lives. A large sum of your Charity will go to education
+              and community development. Human poverty induces the hunting of
+              bonobos for meat. Through <b>awareness programs </b> you will help
+              save the lives of many bonobos and other endangered apes.
+            </p>
+            <p>
+              The <b>El Bonobo community</b> will participating in how the
+              Charity are used. Furthermore, the community will discuss future
+              implementations for how to fund for more Charity, such as
+              possible royalties from El Bonobo comic strip NFTs, and other
+              fundraisers. A holistic approach to helping Bonobos will be
+              addressed in order to identify the best practice and long lasting
+              charity ecosystem. These would target education, conservation,
+              awareness, rescue and food chain initiatives.
+            </p>
+            <p>
+              Voting will be held over discord. Proposals can be done through
+              all available social media.
+            </p>
+            <p>
+              A portion of Charity only once approved by the community can be
+              put towards new dashboard features to help increase token value
+              and conservation efforts.
+            </p>
+            <a
+              href="https://www.notion.so/tokenfactory/Website-5953f52f3ba44c9eba362a556eaa2ebb"
+              target="blank"
+            >
+              <button className="yellow-btn">MAKE Charity</button>
+            </a>
           </div>
-          <div className="col-md-6 charity_wallet py-2 px-5">
-            <button className="green-btn">Donate</button>
-            <br></br>
-            <br></br>
-            <button className="white-btn"><b>USD</b> Received</button>
+          <div className="monkey float-right">
+            <img src={monkeyy} alt="" />
           </div>
         </div>
-      </div>
-
-      <div className="footer">
-        <div className="content d-flex">
-          <div className="col-md-6 media-block">
-            <img src={footerlogo} alt="footer logo"></img>
-            <p>El Bonobo is as community driven, decentralized Marketing Launchpad and ScamScan Audit Service.</p>
-            <SocialIcon url="https://twitter.com/ElBonoboCoin" network="twitter" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="reddit" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="https://t.me/elbonobo_directory" network="telegram" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="medium" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="https://discord.gg/cpyHNheF4Y" network="discord" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="facebook" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="https://instagram.com/ElBonoboCoin" network="instagram" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="youtube" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="tiktok" bgColor="#fff" fgColor="#000"/>
-            <SocialIcon url="#" network="github" bgColor="#fff" fgColor="#000"/>
+      </section>
+      <section id="Dashboard">
+        <div className="content">
+          <div className="s11-block">
+            <div className="s11-bonobo-content-card float-left">
+              <strong className="linear_gradient_font_color">OUR NEW</strong>
+              <h2 className="linear_gradient_font_color2">Dashboard</h2>
+              <p>
+                A slick dashboard that a monkey can understand will be
+                implemented with ideas from the community and professionals. El
+                Bonobo dashboard launches with transaction data including,
+                Charity, and token data. Over time more tools will be
+                available through the dashboard.
+              </p>
+              <p>
+                El Bonobo dashboard aims to deliver the best information for the
+                community. Feedback and ideas from the community will be the
+                driving factor in the El Bonobo Dashboard.
+              </p>
+            </div>
+            <div className="s11-dashboard-img-block float-left">
+              <img src={S11} alt="S11" />
+            </div>
           </div>
-          <div className="col-md-6 email-block">
-            <div className="row">
-              <div className="col-md-4">
-                <p>General</p>
-                <ul>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
-              </div>
-              <div className="col-md-4">
-                <p>Resources</p>
-                <ul>
-                  <li><a href="#">Technology</a></li>
-                  <li><a href="#">Papers</a></li>
-                </ul>
-              </div>
-              <div className="col-md-4">
-                <p>Thanksto</p>
-                <ul>
-                  <li><a href="#">Hackmd</a></li>
-                  <li><a href="#">Binance</a></li>
-                  <li><a href="#">Cosmos Network</a></li>
-                  <li><a href="#">Figma</a></li>
-                  <li><a href="#">Webtorent</a></li>
-                  <li><a href="#">Fleek</a></li>
-                </ul>
-                <button className="yellow-btn">more...</button>
-              </div>
+        </div>
+      </section>
+      <div className="section-12" id="NFT">
+        <div className="main">
+          <div className="s12-bonobo-content-card loat-left">
+            <strong className="linear_gradient_font_color">El Bonobo Comic Strip</strong>
+            <h2 className="linear_gradient_font_color"><span className="linear_gradient_font_color2">NFT</span> Competition</h2>
+            <p>
+              El Bonobo mascot illustration vector files are available for the
+              community to test out their humor and creativeness. The best comic
+              strip voted by the community will be NFTd as a reward! The comic
+              creator will own the NFT completely.
+            </p>
+          </div>
+          <div className="s12-vector-block float-right">
+            <div className="col-4">
+              <img src={s12_1} alt="" />
+              <img src={s12_2} alt="" />
+            </div>
+            <div className="col-4">
+              <img src={s12_3} alt="" />
+            </div>
+            <div className="col-4">
+              <img src={s12_4} alt="" />
+              <img src={s12_5} alt="" />
             </div>
           </div>
         </div>
       </div>
-      
+      <section id="team">
+        <div className="container-fluid">
+          <div className="s13-bonobo-content-card float-left">
+            <div>
+              <strong className="linear_gradient_font_color">MEET OUR</strong>
+              <h2 className="linear_gradient_font_color2">Team</h2>
+              <p>
+                It is understandable that having a transparent team provides
+                trust in a project. However this is a project that goes beyond
+                the scope of traditional digital architects who want to create
+                well intentioned social-impact designs. As this is a
+                conservation project first and foremost, it would be within
+                saviourism-complex to dox each current curator. We have
+                therefore concluded that focusing on the technology, and mission
+                goals are better than centralizing on the current curators. The
+                project will speak for itself. This is also an opportunity for
+                hard working community members online and on the ground to step
+                up and be recognized as the real MVPs of the El Bonobo Project!
+                We want to move to full DAO as soon as possible with the most
+                capable and qualified team, not only participating online but
+                also front line in conservations. These team members deserve to
+                have their pictures in this section if they desire. You are our
+                team. Your dedication and perseverance is worthwhile and
+                recognized.
+              </p>
+            </div>
+          </div>
+          <div className="s13-img-block float-left">
+            <div className="fline">
+              <img src={team1} alt="" />
+              <strong>Name</strong>
+              <strong>Last Name</strong>
+              <p>Title</p>
+            </div>
+            <div>
+              <img src={team2} alt="" />
+              <strong>Name</strong>
+              <strong>Last Name</strong>
+              <p>Title</p>
+            </div>
+            <div className="sline">
+              <img src={team3} alt="" />
+              <strong>Name</strong>
+              <strong>Last Name</strong>
+              <p>Title</p>
+            </div>
+            <div className="sline">
+              <img src={team4} alt="" />
+              <strong>Name</strong>
+              <strong>Last Name</strong>
+              <p>Title</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

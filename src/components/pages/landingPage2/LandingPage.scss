@@ -1,32 +1,39 @@
 .main-block {
+  padding-bottom: 19.35vw;
   background: #00392e;
 }
 .yellow-btn {
+  padding: 0.8333vw 3.593vw;
+  font-family: "Gochi Hand", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2987012987012987vw;
+  line-height: 28px;
+  text-align: center;
   background-color: #fccf00;
   border: none;
-  color: #005141;
+  color: #fff;
   border-radius: 30px;
+  cursor: pointer;
   outline: inherit;
-  padding: 7px 47px;
-  font-family: Somatic;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
   @media (max-width: 767px) {
     font-size: 5.1948vw;
     padding: 3.332vw 14.372vw;
   }
 }
 .green-btn {
+  height: 3.125vw;
+  font-family: "Gochi Hand", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2987012987012987vw;
+  text-align: center;
   background-color: #005141;
   border: none;
+  color: #fff;
   border-radius: 30px;
-  padding: 7px 47px;
-  font-family: Somatic;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  color: #FFFFFF;
+  cursor: pointer;
+  outline: inherit;
   @media (max-width: 767px) {
     font-size: 5.192vw;
     height: 12.5vw;
@@ -45,19 +52,14 @@
   }
 }
 .menu {
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1250px;
-  margin: auto;
-  padding: 0px 20px;
+  height: 5.84vw;
   @media (max-width: 767px) {
     padding: 20px;
+    height: 22.84vw;
   }
   .logo {
-    max-width: 201px;
-    width: 100%;
+    margin-top: 1.0417vw;
+    width: 11.458vw;
     @media (max-width: 767px) {
       float: left;
       width: 50vw;
@@ -66,23 +68,19 @@
   .menutab {
     float: right;
     list-style: none;
-    padding: 5px 15px;
-    margin-bottom: 0;
+    background: #00392e;
+    padding: 2.08333vw;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
     li {
       float: left;
-      font-size: 20px;
-      font-family: 'Somatic';
-      font-weight: 400;
-      margin-right: 20px;
+      font-size: 0.8333vw;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 800;
+      margin-right: 1.45833vw;
       &:last-child {
         margin-right: 0;
       }
-    }
-    .connect_btn a{
-      padding: 5px 23px;
-      background: #FCCF00;
-      border-radius: 30px;
-      box-shadow: 0px 2px 3px 1px #015f4d;
     }
     @media (max-width: 767px) {
       display: none;
@@ -92,9 +90,9 @@
     position: fixed;
     left: 0;
     top: 0;
-    width: 65vw;
+    width: 95vw;
     height: 100vh;
-    background-color: #00a259ed;
+    background-color: #00392e;
     z-index: 99999;
     text-align: left;
     list-style: none;
@@ -107,7 +105,6 @@
     }
     li {
       margin-bottom: 3.15vw;
-      font-family: 'Somatic';
       a {
         color: #fff;
         text-decoration: none;
@@ -131,39 +128,49 @@
   }
   &.open {
     float: right;
+    top: 2.66vw;
     position: relative;
   }
   @media (min-width: 768px) {
     display: none;
   }
 }
-section#head{
-  background: #00A259;
-  color: #fff;
-}
-section#crypto_jungle {
+section:nth-child(1) {
   background: url("./img/s1.png") no-repeat, #015f4d no-repeat center center;
+  width: 100%;
+  height: 50vw;
   background-size: 100% 100%;
-  padding: 7vw 0 7vw 0;
   @media (max-width: 767px) {
     background-size: cover;
+    height: auto;
     padding-bottom: 90px;
   }
   .bonobo-content-card {
     color: #fff;
-    max-width: 1250px;
-    width: 100%;
-    margin: auto;
-    padding: 0px 20px;
+    padding: 0 18.3vw;
     @media (max-width: 767px) {
       text-align: center;
       padding: 0 10px;
-      flex-direction: column;
     }
     .bonobo-heading {
+      padding-top: 6.177vw;
+      strong {
+        font-size: 1.2987012987012987vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.25vw;
+        color: #ffffff;
+        @media (max-width: 767px) {
+          font-size: 5vw;
+          line-height: 2.92vw;
+        }
+      }
       h1 {
         color: #ffffff;
-        font-family: 'Jungle Bones';
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
         font-size: 8.3333vw;
         line-height: 9.843vw;
         @media (max-width: 767px) {
@@ -174,38 +181,34 @@ section#crypto_jungle {
     }
     .bonobo-content {
       margin-top: 1.5rem;
-      h5{
-        font-family: Somatic;
-        font-size: 30px;
-        line-height: 32px;
-        max-width: 450px;
-        background: #000;
-        span{
-          color: #fccf00;
-          font-size: 35px;
+      p {
+        font-family: "Montserrat", sans-serif;
+        color: #fff;
+        width: 37em;
+        padding-bottom: 5px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.8333vw;
+        line-height: 1.25vw;
+        @media (max-width: 767px) {
+          width: 90%;
+          margin: auto;
+          font-size: 3.332vw;
+          line-height: 5vw;
         }
-      }
-      a{
-        width: 37px !important;
-        height: 37px !important;
       }
     }
     .bonobo-button {
-      margin-top: 2vw;
-      span{
-        img{
-          width: 26px;
-        }
-      }
-      .coins{
-        height: 47px;
-        margin: 0 3px;
-        margin-top: -10px;
-      }
+      margin-top: 2.968vw;
     }
     .bonobo {
       width: 20.833vw;
       position: relative;
+
+      @media (min-width: 768px) {
+        left: 2.083vw;
+        top: 13.125vw;
+      }
       @media (max-width: 767px) {
         width: 60.332vw;
         top: 9.3vw;
@@ -213,47 +216,71 @@ section#crypto_jungle {
     }
   }
 }
-section#join_el_bonobo {
-  background: #005141 no-repeat center center;
+section:nth-child(2) {
+  background: #015f4d no-repeat center center;
   position: relative;
   max-width: 100%;
   overflow-y: auto;
   .s2-bonobo-content-card {
     width: 62.5%;
     color: #fff;
-    padding: 6vw 5vw 0 5vw;
+    padding: 6.51vw 12.13vw 0 18.3vw;
     @media (max-width: 767px) {
       text-align: center;
       width: 100%;
       padding: 20px;
     }
+    strong {
+      font-size: 1.25vw;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 800;
+      line-height: 1.25vw;
+      @media (max-width: 767px) {
+        font-size: 5vw;
+        line-height: 5vw;
+      }
+    }
     h2 {
-      font-size: 36px;
-      font-family: 'Somatic';
-      line-height: 50px;
+      font-size: 5vw;
+      font-family: "Gochi Hand", cursive;
+      font-style: normal;
+      font-weight: normal;
+      line-height: 5.2vw;
+      margin-bottom: 1.25vw;
+      @media (max-width: 767px) {
+        line-height: 17.83vw;
+        font-size: 17.83vw;
+      }
     }
     ul {
       padding-left: 10px;
       li {
         margin: 10px;
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: 20px;
-        line-height: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.833vw;
+        line-height: 1.25vw;
         text-align: left;
         @media (max-width: 767px) {
-          font-size: 17px;
+          font-size: 3.332vw;
+          line-height: 5vw;
         }
       }
     }
     p {
-      font-family: 'IBM Plex Sans Condensed', sans-serif;
-      font-size: 20px;
-      line-height: 24px;
+      font-family: "Montserrat", sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.833vw;
+      line-height: 1.25vw;
       @media (max-width: 767px) {
-        font-size: 17px;
+        font-size: 3.332vw;
+        line-height: 5vw;
       }
       b {
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
+        font-family: "Montserrat", sans-serif;
         font-style: normal;
         font-weight: 800;
       }
@@ -275,72 +302,124 @@ section#join_el_bonobo {
     }
   }
 }
-#marketing, #scamscan{
+.social-network-block {
   background-color: #fccf00;
+  color: #fff;
   position: relative;
-  padding: 3.12vw 0 3.12vw 0vw;
-  .content{
-    max-width: 1250px;
-    margin: auto;
-    width: 100%;
-    padding: 0px 20px;
-    justify-content: space-between;
-    @media (max-width: 767px){
-      flex-direction: column;
-      padding: 50px 15px;
-      align-items: center !important;
-    }
+  padding: 3.12vw 0 3.12vw 18.3vw;
+  @media (max-width: 767px) {
+    padding: 40px 20px;
+    text-align: center;
   }
-  h2{
-    font-family: Somatic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 60px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 31px;
-      text-align: center;
-      line-height: 31px;
+  .content {
+    overflow-y: auto;
+    .media-block {
+      display: inline-block;
+      place-content: start;
+      align-items: center;
+      padding-top: 1.04vw;
+      img {
+        width: 3.125vw;
+        @media (max-width: 767px) {
+          width: 12.5vw;
+          margin-right: 6.25vw;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      a {
+        margin-right: 1.572vw;
+        @media (max-width: 767px) {
+          margin-right: 6.25vw;
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      .heading {
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 3.2467532467532467vw;
+        line-height: 3.125vw;
+        color: #ffffff;
+        margin-bottom: 1.04vw;
+        display: inline-block;
+        @media (max-width: 767px) {
+          font-size: 12.98vw;
+          line-height: 19.5vw;
+        }
+      }
     }
-  }
-  p{
-    font-family: Somatic;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
-    line-height: 32px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 21px;
-      text-align: center;
-      line-height: 25px;
-    }
-  }
-  h5{
-    font-family:  'IBM Plex Sans Condensed', sans-serif;
-    font-size: 24px;
-    line-height: 24px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 19px;
-      text-align: center;
-      line-height: 21px;
-    }
-  }
-  button{
-    @media (max-width: 767px) {
-      margin: 1.3em 0;
+    .email-block {
+      margin-left: 15.4vw;
+      @media (max-width: 767px) {
+        margin: auto;
+        text-align: center;
+      }
+      p {
+        width: 20.68vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.2987012987012987vw;
+        line-height: 1.66vw;
+        @media (max-width: 767px) {
+          text-align: center;
+          width: auto;
+          font-size: 5.192vw;
+          line-height: 6.64vw;
+          margin-top: 5.17vw;
+        }
+      }
+      label {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 0.8658008658008658vw;
+        display: inline-block;
+        margin-top: 1.56vw;
+        @media (max-width: 767px) {
+          font-size: 3.44vw;
+        }
+      }
+      input[type="email"] {
+        border: none;
+        border-radius: 1.56vw;
+        resize: vertical;
+        margin-top: 10px;
+        margin-right: 15px;
+        font-size: 0.83vw;
+        padding: 1.04vw;
+        width: 19.68vw;
+        @media (max-width: 767px) {
+          width: 58.72vw;
+          display: block;
+          margin: 4.16vw auto;
+          font-size: 3.32vw;
+          padding: 2.16vw 4.16vw;
+        }
+      }
+      input:focus {
+        outline: none !important;
+      }
+      button {
+        width: 8.8vw !important;
+        @media (max-width: 767px) {
+          width: 35.2vw !important;
+        }
+      }
     }
   }
 }
-
-section#core_values {
+section:nth-child(4) {
   background: url("./img/Mask Group.png") no-repeat, #015f4d no-repeat;
   background-size: 100%;
   position: relative;
   width: 100%;
-  padding: 6.77vw 0;
+  height: 50vw;
+  padding: 6.77vw 18.3vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     text-align: center;
@@ -348,9 +427,6 @@ section#core_values {
     height: auto;
   }
   .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0px 20px;
     .s3-bonobo-heading-block {
       color: #fff;
       strong {
@@ -365,11 +441,13 @@ section#core_values {
         }
       }
       h2 {
-        font-family: Somatic;
-        font-size: 72px;
-        line-height: 100px;
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.411255411255412vw;
+        line-height: 5.2vw;
         @media (max-width: 767px) {
-          font-size: 50px;
+          font-size: 19.644vw;
           line-height: 17.8vw;
           margin-bottom: -5.33vw;
         }
@@ -377,17 +455,24 @@ section#core_values {
     }
     .s3-bonobo-main-block {
       color: #fff;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 2em;
+      justify-content: space-around;
+      height: 100%;
+      margin-left: 1rem;
+      margin-right: 1rem;
       margin-top: 2rem;
       @media (max-width: 767px) {
-        flex-direction: column;
+        display: initial;
       }
       .card {
         border-radius: 13px;
         padding: 3.125vw 1.562vw;
         background-color: #005141;
         font-size: 15px;
-        width: 27vw;
+        width: 19.68vw;
+        height: 29.08vw;
         box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         @media (max-width: 767px) {
           margin: 20px 0;
@@ -398,10 +483,12 @@ section#core_values {
         }
       }
       .card-heading {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 1.2987012987012987vw;
+        line-height: 1.67vw;
         padding-bottom: 1.25vw;
-        font-family: Somatic;
-        font-size: 30px;
-        line-height: 32px;
         @media (max-width: 767px) {
           font-size: 7.12vw;
           line-height: 6.68vw;
@@ -409,56 +496,92 @@ section#core_values {
         }
       }
       .card-svg {
-        img {
-          width: 181px;
-          height: 118px;
+        .heart-img {
+          width: 5.058vw;
+          height: 4.167vm;
           margin-bottom: 2.083vw;
+          @media (max-width: 767px) {
+            width: 20.232vw;
+            height: 16.668vw;
+          }
+        }
+        .handshake-img,
+        .idea-img {
+          width: 5.2vw;
+          height: 5.2vw;
+          margin-bottom: 1.56vw;
+          @media (max-width: 767px) {
+            width: 20.82vw;
+            height: 20.8vw;
+          }
         }
       }
       .card-content {
-        font-family:  'IBM Plex Sans Condensed', sans-serif;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 24px;
+        font-size: 0.8658008658008658vw;
+        line-height: 1.25vw;
         @media (max-width: 767px) {
+          font-size: 3.463vw;
+          line-height: 5vw;
         }
       }
     }
   }
 }
-section#Tokenomics {
+section:nth-child(5) {
   background: url("./img/s5.png"), #005141 no-repeat center center;
   background-size: 100% 100%;
   position: relative;
   width: 100%;
-  padding: 7vw 0 7vw 0;
+  height: 72.708vw;
+  padding: 7.2917vw 0 0 18.385vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     background-size: cover;
     height: auto;
   }
-  .content {
-    font-family: Somatic;
+  .container-fluid {
+    font-family: "Montserrat", sans-serif;
     color: #fff;
-    max-width: 1250px;
-    margin: auto;
-    padding: 0px 20px;
-    h2 {
-      font-family: Somatic;
-      font-size: 72px;
-      line-height: 100px;
+    .heading {
       @media (max-width: 767px) {
-        text-align: center; 
-        font-size: 50px;
-        line-height: 70px;
+        text-align: center;
+      }
+      strong {
+        font-size: 1.2987012987012987vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.25vw;
+        @media (max-width: 767px) {
+          font-size: 4.19vw;
+          line-height: 5vw;
+        }
+      }
+      h2 {
+        font-size: 5.208vw;
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 5.208vw;
+        @media (max-width: 767px) {
+          font-size: 15.83vw;
+          line-height: 20.83vw;
+        }
       }
     }
     .s5-bonobo-content-main-block {
+      color: #fff;
       margin-top: 2.604vw;
-      @media (max-width: 767px){
-        flex-direction: column;
-      }
-      .block-1 {
+      .s5-bonobo-content-block-1 {
+        width: 41.458vw;
+        display: inline-block;
+        @media (max-width: 767px) {
+          width: 100%;
+          display: block;
+        }
         .s5-bonobo-content-block-sub-child {
           display: grid;
           grid-template-columns: 1fr 1fr;
@@ -475,10 +598,9 @@ section#Tokenomics {
         .card-2,
         .card-3 {
           border-radius: 13px;
-          background-color: #015f4d;
+          background-color: #005141;
           font-size: 13px;
           box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-          max-width: 450px;
         }
         .card-1 {
           padding: 2.083vw 1.562vw;
@@ -491,12 +613,15 @@ section#Tokenomics {
               height: 12vw;
             }
             strong {
+              font-family: "Montserrat", sans-serif;
               color: #fccf00;
+              font-size: 2.083vw;
+              font-weight: 900;
+              font-style: normal;
+              font-weight: 800;
+              line-height: 2.7083vw;
               width: 6.51vw;
               display: inline-block;
-              font-family: Somatic;
-              font-size: 30px;
-              line-height: 30px;
               @media (max-width: 767px) {
                 font-size: 7.332vw;
                 line-height: 10.83vw;
@@ -508,13 +633,13 @@ section#Tokenomics {
               }
             }
             span {
+              font-size: 0.833vw;
+              line-height: 2.7083vw;
               position: relative;
               top: -0.392vw;
-              font-family: 'IBM Plex Sans Condensed', sans-serif;
-              font-size: 24px;
-              line-height: 24px;
               @media (max-width: 767px) {
-                font-size: 21px;
+                font-size: 3.332vw;
+                line-height: 5vw;
                 display: inline-block;
                 width: 48vw;
                 margin-left: 20.8vw;
@@ -526,60 +651,145 @@ section#Tokenomics {
           }
         }
         .card-2 {
+          height: 20.78vw;
+          padding: 2.083vw 1.56vw;
+          @media (max-width: 767px) {
+            width: 37vw;
+            height: auto;
+            padding: 8.192vw 6.24vw;
+          }
+          .card-heading {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.2987012987012987vw;
+            line-height: 1.67vw;
+            @media (max-width: 767px) {
+              font-size: 3.1948vw;
+              line-height: 6.68vw;
+            }
+          }
+          .card-body {
+            width: 100%;
+            padding: 0;
+            div {
+              font-size: 0.833vw;
+              font-family: "Montserrat", sans-serif;
+              font-style: normal;
+              line-height: 1.25vw;
+              margin-top: 1.042vw;
+              @media (max-width: 767px) {
+                font-size: 2.1948vw;
+                line-height: 4.32vw;
+              }
+              strong {
+                line-height: 1.25vw;
+              }
+            }
+          }
+        }
+        .card-3 {
+          height: 20.78vw;
           padding: 2.083vw 1.56vw;
           @media (max-width: 767px) {
             padding: 8.192vw 6.24vw;
           }
-          .card-body {
-            padding: 0;
-            h5{
-              font-family: Somatic;
-              font-size: 30px;
-              line-height: 32px;
-              padding: 11px 3px;
+          @media (max-width: 767px) {
+            width: 37vw;
+            height: auto;
+          }
+          .card-heading {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.25vw;
+            line-height: 1.67vw;
+            @media (max-width: 767px) {
+              font-size: 3.1948vw;
+              line-height: 5.68vw;
             }
-            p{
-              font-family: 'IBM Plex Sans Condensed', sans-serif;
-              font-size: 24px;
-              line-height: 24px;
+          }
+          ul {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 0.8658008658008658vw;
+            line-height: 1.2vw;
+            margin-top: 0.8vw;
+            padding-left: 10px;
+            @media (max-width: 767px) {
+              font-size: 2.1948vw;
+              line-height: 3.68vw;
+              margin-top: 3.2vw;
+            }
+            li {
+              padding: 0rem 0rem 1rem 0rem;
             }
           }
         }
       }
-      .block-2 {
+      .s5-bonobo-content-block-2 {
+        width: 33vw;
+        display: inline-block;
         @media (max-width: 767px) {
           width: 100%;
+          display: block;
         }
         .card-1 {
           border-radius: 13px;
-          background-color: #015f4d;
-          box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+          background-color: #005141;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
           position: relative;
-          padding: 2vw 3vw;
-          margin-top: -20vw;
-          width: 100%;
-          max-width: 450px;
+          padding: 2.08vw 1.56vw 0.08vw 1.56vw;
+          margin-top: -21.93vw;
+          width: 19.68vw;
           margin-left: 2.5vw;
           @media (max-width: 767px) {
             width: 90%;
             height: auto;
             padding: 8.32vw 6.24vw;
           }
-          h5 {
-            font-family: Somatic;
-            font-size: 30px;
-            line-height: 35px;
-            padding: 11px 3px;
-            span{
-              color: #fccf00;
+
+          .card-heading {
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 1.2987012987012987vw;
+            line-height: 1.67vw;
+            @media (max-width: 767px) {
+              font-size: 3.1948vw;
+              line-height: 8.68vw;
             }
           }
-          h6 {
-            font-family: Somatic;
-            font-size: 24px;
-            line-height: 29px;
-            span{
-              color: #fccf00;
+          p {
+            margin-top: 0.781vw;
+            width: 90%;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 0.8658008658008658vw;
+            line-height: 1.25vw;
+            @media (max-width: 767px) {
+              font-size: 2.1948vw;
+              line-height: 3.68vw;
+            }
+          }
+          ul {
+            z-index: 1;
+            font-family: "Montserrat", sans-serif;
+            font-style: normal;
+            font-size: 0.8658008658008658vw;
+            line-height: 1.25vw;
+            margin-top: 1.02vw;
+            padding-left: 10%;
+            li {
+              line-height: 1.25vw;
+              @media (max-width: 767px) {
+                font-size: 2.1948vw;
+                line-height: 3.68vw;
+              }
+              span {
+                font-weight: 900;
+                color: #fccf00;
+              }
             }
           }
         }
@@ -664,87 +874,96 @@ section#Tokenomics {
     }
   }
 }
-section#Bonobo {
-  background: url("./img/buyback.png") no-repeat, #00A259 no-repeat;
+section:nth-child(7) {
+  background: url("./img/buyback.png") no-repeat, #00ac4d no-repeat;
   background-size: 100% 100%;
   position: relative;
   width: 100%;
-  padding: 7vw 0 7vw 0;
+  height: 56.25vw;
+  padding: 6.2917vw 0 0 18.385vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     height: auto;
     background-size: cover;
   }
   .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0 20px;
-    h2 {
-      font-family: Somatic;
-      font-size: 72px;
-      line-height: 100px;
+    .s5-bonobo-heading-block {
       color: #fff;
-      max-width: 651px;
-      position: relative;
-      img{
-        position: absolute;
-        top:0;
-        right:0;
-        z-index: 0;
-      }
-      span{
-        position: relative;
-        z-index: 1;
-      }
-      @media (max-width: 767px) {
-        font-size: 50px;
-        line-height: 70px;
+      div {
+        .sub {
+          font-size: 1.25vw;
+          line-height: 1.25vw;
+          font-weight: 900;
+          font-family: "Montserrat", sans-serif;
+          @media (max-width: 767px) {
+            font-size: 5vw;
+            line-height: 5vw;
+            text-align: center;
+          }
+        }
+        .main {
+          font-size: 5.208rem;
+          font-family: "Gochi Hand", cursive;
+          line-height: 5.208vw;
+          margin-bottom: 1.042vw;
+          @media (max-width: 767px) {
+            font-size: 20.832vw;
+            line-height: 20.831vw;
+            text-align: center;
+            margin-bottom: 4.168vw;
+          }
+        }
       }
     }
     .bonobo-content-block {
       color: #fff;
       .card {
         display: inline-flex;
+        width: 16.1vw;
         background: none;
         border: none;
-        padding: 30px;
+        padding: 0;
+        margin: 0;
+        margin-right: 6.191vw;
         @media (max-width: 767px) {
           width: 100%;
           margin: auto;
+          margin-bottom: 4.16vw;
         }
         .child-card {
           .step {
             div {
               span {
-                font-size: 16px;
-                font-family: 'Somatic';
+                font-size: 0.833vw;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 900;
                 text-transform: uppercase;
                 position: relative;
                 z-index: 2;
-                top: -2.1vw;
+                top: -1.489vw;
                 @media (max-width: 767px) {
                   font-size: 3.332vw;
                   top: -5.956vw;
                 }
               }
               strong {
-                font-family: 'Somatic';
-                font-size: 100px;
+                font-family: "Montserrat", sans-serif;
+                font-weight: 800;
+                font-size: 5.208vw;
                 color: #005141;
                 position: relative;
-                left: -0.3vw;
+                left: -1.3vw;
                 @media (max-width: 767px) {
                   font-size: 20.832vw;
-                  left: -1.2vw;
+                  left: -5.2vw;
                 }
               }
             }
           }
           .step-heading {
-            font-size: 24px;
+            font-size: 1.4vw;
+            font-weight: bolder;
             margin-bottom: 1.042vw;
-            font-family: 'Somatic';
-            line-height: 32px;
             @media (max-width: 767px) {
               font-size: 5.6vw;
               margin-bottom: 4.168vw;
@@ -752,9 +971,8 @@ section#Bonobo {
           }
 
           .step-content {
-            font-size: 20px;
-            line-height: 24px;
-            font-family: 'IBM Plex Sans Condensed', sans-serif;
+            font-size: 0.833vw;
+            line-height: 1.25vw;
             @media (max-width: 767px) {
               font-size: 3.332vw;
               line-height: 5vw;
@@ -769,44 +987,18 @@ section#Bonobo {
     }
   }
 }
-section#milestones_ticker {
+section:nth-child(8) {
   background-color: #005141;
   width: 100%;
   position: relative;
-  padding: 9vw 0 9vw 0;
+  padding: 9.37vw 0 9vw 18.385vw;
   @media (max-width: 767px) {
     padding: 40px 20px;
     height: auto;
   }
   .content {
-    .card-flow::before {
-      content: "";
-      background: linear-gradient(272deg, #005141 19%, #00514100 27%);
-      z-index: 5;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 42%;
-      height: 100%;
-  }
-    max-width: 1250px;
-    margin: auto;
-    padding: 0 20px;
-    h2 {
-        font-family: Somatic;
-        font-size: 72px;
-        line-height: 100px;
-        text-align: center;
-        color: #fff;
-        @media (max-width: 767px) {
-          font-size: 50px;
-          line-height: 70px;
-        }
-      }
     .heading {
       color: #fff;
-      max-width: 501px;
-      margin: auto;
       strong {
         font-size: 1.25vw;
         font-family: "Montserrat", sans-serif;
@@ -818,11 +1010,24 @@ section#milestones_ticker {
           line-height: 5vw;
         }
       }
-      
+      h2 {
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.208vw;
+        line-height: 5.208vw;
+        @media (max-width: 767px) {
+          font-size: 16.832vw;
+          line-height: 16.832vw;
+        }
+      }
       p {
-        font-family: Somatic;
-        font-size: 25px;
-        line-height: 26px;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.833vw;
+        line-height: 1.25vw;
+        width: 31.764069264069263vw;
         @media (max-width: 767px) {
           font-size: 3.332vw;
           line-height: 5vw;
@@ -834,16 +1039,12 @@ section#milestones_ticker {
       width: 100%;
       overflow: hidden;
       padding-bottom: 15px;
-      position: relative;
     }
     .card-section {
       position: relative;
       margin-top: 2.24vw;
       width: 8000px;
       transition: left 1s;
-      @media(max-width: 767px){
-        margin-left: 15px;
-      }
       .card {
         padding: 1.56vw 1.56vw 0;
         box-shadow: 5px 8px 8px rgba(17, 17, 17, 0.2) !important;
@@ -856,7 +1057,7 @@ section#milestones_ticker {
         display: inline-block;
         margin-right: 2.03vw;
         @media (max-width: 767px) {
-          width: 73vw;
+          width: 90vw;
           height: 64.98vw;
           margin-right: 0;
           padding: 6.24vw 6.24vw 0;
@@ -951,26 +1152,37 @@ section#milestones_ticker {
     }
   }
 }
-section#Roadmap {
-  background: url("./img/S9.png") no-repeat, #015f4d no-repeat center center;
-  background-size: cover;
-  background-position: bottom center;
-  padding: 7vw 0 7vw 0;
+section:nth-child(9) {
+  background: url("./img/s9.png") no-repeat, #015f4d no-repeat center center;
+  background-size: 100% 100%;
+  padding: 9.37vw 18.385vw 7.1vw 18.385vw;
+  height: auto;
   @media (max-width: 767px) {
     padding: 40px 20px;
+    height: auto;
   }
   .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0 20px;
-    h2 {
-      font-family: Somatic;
-      font-size: 72px;
-      line-height: 100px;
-      color: #fff;
-      @media (max-width: 767px) {
-        font-size: 50px;
-        line-height: 70px;
+    .s9-bonobo-heading-block {
+      div {
+        color: #fff;
+        @media (max-width: 767px) {
+          text-align: center;
+        }
+        .sub {
+          font-size: 1.25vw;
+          width: 100%;
+          font-family: "Montserrat", sans-serif;
+          @media (max-width: 767px) {
+            font-size: 5vw;
+          }
+        }
+        .main {
+          font-size: 5.208vw;
+          font-family: "Gochi Hand", cursive;
+          @media (max-width: 767px) {
+            font-size: 17.83vw;
+          }
+        }
       }
     }
 
@@ -979,14 +1191,15 @@ section#Roadmap {
       color: #fff;
       margin-top: 1.56vw;
       .content-card-block-1 {
-        padding-top: 11vw;
+        height: 100%;
+        padding-top: 4.56vw;
         .card {
           margin: 0 auto;
+          width: 14.27vw;
           position: relative;
           background: none;
           border: none;
           margin-bottom: 2.23vw;
-          max-width: 351px;
           @media (max-width: 767px) {
             width: 28.08vw;
             margin-bottom: 8.92vw;
@@ -994,28 +1207,29 @@ section#Roadmap {
           div {
             div {
               background-color: #00a259;
-              font-size: 24px;
-              line-height: 32px;
-              font-family: 'Somatic';
+              font-size: 1.56vw;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 900;
               border-radius: 30px;
-              width: 11.8vw;
-              height: 3vw;
+              width: 8.8vw;
+              height: 3.125vw;
               text-align: center;
               padding-top: 0.372vw;
               @media (max-width: 767px) {
                 font-size: 3.86vw;
                 width: 21.74vw;
-                height: 8.76vw;
+                height: 6.76vw;
               }
             }
             ul {
-              font-family:'IBM Plex Sans Condensed', sans-serif;
+              font-family: "Montserrat", sans-serif;
+              line-height: 1.25vw;
               margin-top: 2.415vw;
-              font-size: 20px;
+              font-size: 0.833vw;
               @media (max-width: 767px) {
-                line-height: 4.14vw;
+                line-height: 3.14vw;
                 margin-top: 3.14vw;
-                font-size: 3.415vw;
+                font-size: 2.415vw;
                 padding-left: 2.89vw;
               }
             }
@@ -1023,13 +1237,14 @@ section#Roadmap {
         }
       }
       .content-card-block-2 {
+        height: 100%;
         .card {
           margin: 0 auto;
+          width: 14.27vw;
           position: relative;
           background: none;
           border: none;
           margin-bottom: 2.23vw;
-          max-width: 351px;
           @media (max-width: 767px) {
             width: 28.08vw;
             margin-bottom: 8.92vw;
@@ -1037,28 +1252,29 @@ section#Roadmap {
           div {
             div {
               background-color: #00a259;
-              font-size: 24px;
-              line-height: 32px;
-              font-family: 'Somatic';
+              font-size: 1.56vw;
+              font-family: "Montserrat", sans-serif;
+              font-weight: 900;
               border-radius: 30px;
-              width: 11.8vw;
-              height: 3vw;
+              width: 8.8vw;
+              height: 3.125vw;
               text-align: center;
               padding-top: 0.372vw;
               @media (max-width: 767px) {
                 font-size: 3.86vw;
                 width: 21.74vw;
-                height: 8.76vw;
+                height: 6.76vw;
               }
             }
             ul {
-              font-family: 'IBM Plex Sans Condensed', sans-serif;
+              font-family: "Montserrat", sans-serif;
+              line-height: 1.25vw;
               margin-top: 2.415vw;
-              font-size: 20px;
+              font-size: 0.833vw;
               @media (max-width: 767px) {
-                line-height: 4.14vw;
+                line-height: 3.14vw;
                 margin-top: 3.14vw;
-                font-size: 3.415vw;
+                font-size: 2.415vw;
                 padding-left: 2.89vw;
               }
             }
@@ -1068,112 +1284,306 @@ section#Roadmap {
     }
   }
 }
-#charity{
-  background-color: #fccf00;
-  position: relative;
-  padding: 3.12vw 0 3.12vw 0vw;
-  .content{
-    max-width: 1250px;
-    margin: auto;
-    width: 100%;
-    padding: 0px 20px;
-    justify-content: space-between;
-    @media (max-width: 767px){
-      flex-direction: column;
-      padding: 50px 15px;
-      align-items: center !important;
-      .py-2{
+section:nth-child(10) {
+  background: #00392e no-repeat center center;
+  background-size: 100%;
+  padding: 0 0 9.37vw 18.385vw;
+  height: 60.42vw;
+  @media (max-width: 767px) {
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .content {
+    .s10-bonobo-content-card {
+      padding-top: 9.37vw;
+      color: #fff;
+      position: relative;
+      display: inline-block;
+      width: 30.57vw;
+      @media (max-width: 767px) {
+        width: 100%;
+        padding-top: 0;
         text-align: center;
+      }
+      strong {
+        font-size: 1.25vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.25vw;
+        @media (max-width: 767px) {
+          font-size: 5vw;
+          line-height: 5vw;
+        }
+      }
+      h2 {
+        font-size: 5.208vw;
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 5.208vw;
+        @media (max-width: 767px) {
+          font-size: 13.33vw;
+          line-height: 20.83vw;
+        }
+      }
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.833vw;
+        line-height: 1.25vw;
+        margin-bottom: 1.25vw;
+        @media (max-width: 767px) {
+          font-size: 3.33vw;
+          line-height: 5vw;
+          margin-bottom: 5vw;
+        }
+        b {
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 900;
+          font-size: 0.9658008658008658vw;
+          line-height: 1.25vw;
+          @media (max-width: 767px) {
+            font-size: 3.84vw;
+            line-height: 5vw;
+          }
+        }
+      }
+      button {
+        font-size: 1.25vw;
+        width: 14.27vw;
+        height: 3.125vw;
+        margin-top: 1.14vw;
+        padding: 0;
+        @media (max-width: 767px) {
+          font-size: 5vw;
+          width: 57.08vw;
+          height: 12.5vw;
+          margin-top: 4.56vw;
+        }
+      }
+    }
+    .monkey {
+      width: 47.3vw;
+      display: inline-block;
+      img {
+        width: 100%;
+      }
+      @media (max-width: 767px) {
+        width: 90vw;
+        margin: 5.25vw auto;
       }
     }
   }
-  h2{
-    font-family: Somatic;
-    font-size: 50px;
-    line-height: 60px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 31px;
-      text-align: center;
-      line-height: 31px;
-    }
-  }
-  p{
-    font-family: Somatic;
-    font-size: 30px;
-    line-height: 32px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 21px;
-      text-align: center;
-      line-height: 25px;
-    }
-  }
-  h5{
-    font-family:  'IBM Plex Sans Condensed', sans-serif;
-    font-size: 24px;
-    line-height: 24px;
-    color: #005141;
-    @media (max-width: 767px){
-      font-size: 19px;
-      text-align: center;
-      line-height: 21px;
-    }
-  }
-  .charity_wallet{
-    text-align: right;
-    button{
-      width: 100%;
-      text-align: right;
-      background-color: #fff;
-      color: #005141;
-      font-family: 'IBM Plex Sans Condensed', sans-serif;
-    }
-  }
-  .monkeys{
-    border: 7px solid #fff;
-    border-radius: 33px;
-  }
 }
-section#team {
-  background: #015f4d;
-  padding: 7vw 0 7vw 0;
+section:nth-child(11) {
+  background-color: #00a259;
+  height: 38.5vw;
+  padding: 9.37vw 0 9.37vw 18.385vw;
   @media (max-width: 767px) {
+    padding: 40px 20px;
+    height: auto;
   }
   .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0 20px;
-    color: #fff;
-    @media (max-width: 767px){
-      flex-direction: column;
-    }
-    .s13-bonobo-content-card {
+    .s11-bonobo-content-card {
+      color: #fff;
+      display: inline-block;
+      width: 30.57vw;
       @media (max-width: 767px) {
         width: 100%;
         text-align: center;
       }
+      strong {
+        font-size: 1.25vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.25vw;
+        @media (max-width: 767px) {
+          font-size: 5vw;
+          line-height: 5vw;
+        }
+      }
       h2 {
-          font-family: "Somatic";
-          font-size: 72px;
-          line-height: 100px;
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.208vw;
+        line-height: 5.208vw;
+        @media (max-width: 767px) {
+          font-size: 13.832vw;
+          line-height: 20.832vw;
+        }
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.803vw;
+        line-height: 1.25vw;
+        margin-bottom: 2.68vw;
+        @media (max-width: 767px) {
+          font-size: 3.212vw;
+          line-height: 5vw;
+          margin-bottom: 5.12vw;
+        }
+      }
+    }
+
+    .s11-dashboard-img-block {
+      display: inline-block;
+      width: 30.57vw;
+      margin-left: 2.083vw;
+      @media (max-width: 767px) {
+        width: 73vw;
+        margin-left: 7.23vw;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+.section-12 {
+  background-color: #005141;
+  padding: 0 0 0 18.385vw;
+  height: 25vw;
+  @media (max-width: 767px) {
+    padding: 40px 20px;
+    height: auto;
+  }
+  .main {
+    .s12-bonobo-content-card {
+      color: #fff;
+      display: inline-block;
+      width: 35.52vw;
+      padding-top: 6.35vw;
+      @media (max-width: 767px) {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+      }
+      strong {
+        font-size: 1.25vw;
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 1.25vw;
+        text-transform: uppercase;
+        @media (max-width: 767px) {
+          font-size: 5vw;
+          line-height: 15vw;
+        }
+      }
+      h2 {
+        font-family: "Gochi Hand", cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 5.208vw;
+        line-height: 5.208vw;
+        @media (max-width: 767px) {
+          font-size: 16.21vw;
+          line-height: 16.21vw;
+        }
+      }
+
+      p {
+        font-family: "Montserrat", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.803vw;
+        line-height: 1.25vw;
+        width: 30.57vw;
+        @media (max-width: 767px) {
+          width: 90%;
+          margin: auto;
+          font-size: 3.21vw;
+          line-height: 5vw;
+        }
+      }
+    }
+    .s12-vector-block {
+      display: inline-block;
+      width: 37.5vw;
+      @media (max-width: 767px) {
+        width: 80vw;
+        margin-top: 5vw;
+        margin-left: 5vw;
+      }
+      div {
+        float: left;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+section:nth-child(13) {
+  background: #015f4d;
+  height: 61.45vw;
+  padding: 0 0 0 18.385vw;
+  @media (max-width: 767px) {
+    height: auto;
+    padding: 0 20px;
+  }
+  .container-fluid {
+    .s13-bonobo-content-card {
+      display: inline-block;
+      width: 19.68vw;
+      padding-top: 10.52vw;
+      @media (max-width: 767px) {
+        width: 100%;
+        padding-top: 40px;
+        text-align: center;
+      }
+      div {
+        color: #fff;
+        strong {
+          font-size: 1.25vw;
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 800;
+          line-height: 1.25vw;
+          text-transform: uppercase;
           @media (max-width: 767px) {
-            font-size: 50px;
-            line-height: 71px;
+            font-size: 6vw;
+            line-height: 5vw;
           }
         }
-      p, li {
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: 25px;
-        line-height: 27px;
-        @media (max-width: 767px) {
-          font-size: 19px;
-          line-height: 21px;
+        h2 {
+          font-family: "Gochi Hand", cursive;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 5.208vw;
+          line-height: 5.208vw;
+          @media (max-width: 767px) {
+            font-size: 17.83vw;
+            line-height: 20.83vw;
+          }
+        }
+
+        p {
+          font-family: "Montserrat", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 0.833vw;
+          line-height: 1.25vw;
+          @media (max-width: 767px) {
+            font-size: 3.332vw;
+            line-height: 5vw;
+          }
         }
       }
     }
     .s13-img-block {
-      padding: 0 1.48vw;
+      width: 58vw;
+      padding: 4.167vw 1.48vw;
       @media (max-width: 767px) {
         width: 87vw;
       }
@@ -1192,10 +1602,19 @@ section#team {
             margin-left: 8.42vw;
           }
         }
+        strong {
+          display: block;
+          font-size: 1.25vw;
+          line-height: 1.67vw;
+          @media (max-width: 767px) {
+            font-size: 4vw;
+            line-height: 5.67vw;
+          }
+        }
         p {
-          font-size: 24px;
-          line-height: 32px;
-          font-family: 'Somatic';
+          font-size: 0.833vw;
+          line-height: 1.25vw;
+          margin-top: 0.44vw;
           @media (max-width: 767px) {
             font-size: 3.12vw;
             line-height: 5vw;
@@ -1218,159 +1637,20 @@ section#team {
     }
   }
 }
-#team_donation{
-  background-color: #fccf00;
-  position: relative;
-  padding: 3.12vw 0 3.12vw 0vw;
-  .content{
-    max-width: 1250px;
-    margin: auto;
-    width: 100%;
-    padding: 0px 20px;
-    justify-content: space-between;
-    @media (max-width: 767px){
-      flex-direction: column;
-      padding: 50px 15px;
-      align-items: center !important;
-      .py-2{
-        text-align: center;
-      }
-    }
-    .col-md-6{
-      position: relative;
-    }
-  }
-  h2{
-    font-family: Somatic;
-    font-size: 50px;
-    line-height: 60px;
-    color: #005141;
-    z-index: 1;
-    position: relative;
-    @media (max-width: 767px){
-      font-size: 31px;
-      text-align: center;
-      line-height: 31px;
-    }
-  }
-  p{
-    font-family: Somatic;
-    font-size: 30px;
-    line-height: 32px;
-    color: #005141;
-    z-index: 1;
-    position: relative;
-    @media (max-width: 767px){
-      font-size: 21px;
-      text-align: center;
-      line-height: 25px;
-    }
-  }
-  h5{
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-    font-size: 24px;
-    line-height: 24px;
-    color: #005141;
-    z-index: 1;
-    position: relative;
-    @media (max-width: 767px){
-      font-size: 19px;
-      text-align: center;
-      line-height: 21px;
-    }
-  }
-  .charity_wallet{
-    text-align: center;
-    .white-btn{
-      width: 100%;
-      text-align: right;
-      background-color: #fff;
-      color: #005141;
-      font-family: 'IBM Plex Sans Condensed', sans-serif;
-      border: none;
-      border-radius: 30px;
-      padding: 7px 47px;
-      font-size: 25px;
-      line-height: 30px;
-    }
-  }
-  img{
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-}
-
-.footer {
-  background-color: #000000;
-  border-top: 10px solid #015f4d;
-  color: #fff;
-  position: relative;
-  padding: 7vw 0 7vw 0;
-  @media (max-width: 767px) {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .content {
-    max-width: 1250px;
-    margin: auto;
-    padding: 0 20px;
-    @media (max-width: 767px){
-      flex-direction: column;
-    }
-    .media-block {
-      padding: 2vw 3vw;
-      p{
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-size: 25px;
-        line-height: 27px;
-      }
-      a {
-        margin-right: 3px;
-        width: 37px !important;
-        height: 37px !important;
-        margin-top: 5px;
-        @media (max-width: 767px) {
-          &:last-child {
-            margin-right: 0;
-          }
-        }
-      }
-    }
-    .email-block {
-      @media (max-width: 767px) {
-        margin: auto;
-        text-align: center;
-      }
-      p {
-        font-family: 'IBM Plex Sans Condensed', sans-serif;
-        font-weight: 700;
-        font-size: 25px;
-        line-height: 32px;
-        @media (max-width: 767px) {
-          font-size: 5.192vw;
-          line-height: 6.64vw;
-          margin-top: 5.17vw;
-        }
-      }
-      ul{
-        padding-left: 0;
-        li{
-          list-style: none;
-          a{
-            color:#fff;
-            text-decoration: none;
-          }
-        }
-      }
-      
-    }
-  }
+section:nth-child(14) {
+  background-color: #002c24;
 }
 
 .dropbtn {
   color: white;
-  font-size: 20px;
+  font-size: 0.8333vw;
+  border: none;
+}
+
+.dropbtn {
+  color: white;
+
+  font-size: 0.8333vw;
   border: none;
 }
 
@@ -1399,6 +1679,10 @@ section#team {
   display: block;
 }
 
+// .dropdown-content .drop_down_links:hover {
+//   background-color: #ddd;
+// }
+
 .dropdown:hover .dropdown-content {
   display: block;
 }
@@ -1407,7 +1691,7 @@ section#team {
 }
 
 .linear_gradient_font_color {
-  background: linear-gradient(95.51deg, #00A259 4.36%, rgba(255, 255, 255, 0) 84.23%),linear-gradient(0deg, #FCCF00, #FCCF00);
+  background: linear-gradient(to right, green 0%, Yellow 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
