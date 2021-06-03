@@ -1,14 +1,11 @@
-import React, { useRef, useState, useEffect, useCallback } from "react"
+import React from "react"
 import "./LandingPage.scss"
+import { useState, useEffect } from "react"
 import {SocialIcon} from "react-social-icons"
-import { useSpring, animated } from 'react-spring'
-// import { Parallax, ParallaxLayer} from 'react-spring/parallax'
 
 import el1 from "./img/el-bonobo-1.png"
 import el2 from "./img/el-bonobo-2.png"
-import leafimg1 from "./img/leaf1.svg"
-import leafimg2 from "./img/leaf2.svg"
-import sunimg from "./img/sun.svg"
+import leaf_sun from "./img/el-bonobo-3.png"
 import bonobo from "./img/bonobo.png"
 import core_v1 from "./img/core_v1.svg"
 import core_v2 from "./img/core_v2.svg"
@@ -74,47 +71,6 @@ function LandingPage2() {
   const openMenu = () => {
     setMenu(0)
   }
-  const monkeytop = useSpring({ 
-    to: { opacity: 1, marginTop: 0 }, 
-    from: { opacity: 0, marginTop: -500 },
-    config: {duration: 1000}
-  })
-  const rotate10 = useSpring({ 
-    from: { transform: 'rotate(-10deg)'},
-    to: { transform: 'rotate(10deg)'},
-    delay: 1000,
-    loop: {reverse: true},
-    config: {duration: 1500}
-  })
-  const leaf1 = useSpring({
-    from: { transform: 'translateY(-50px)'},
-    to: { transform: 'translateY(25px)'},
-    loop: {reverse: true},
-    config: {duration: 2500}
-  })
-  const leaf2 = useSpring({
-    from: { transform: 'translateX(3%)'},
-    to: { transform: 'translateX(11%)'},
-    loop: {reverse: true},
-    config: {duration: 4500}
-  })
-  const sun = useSpring({
-    from: { top: '150%'},
-    to: { top: '50%'},
-    delay: 3000,
-    config: {duration: 3500}
-  })
-  const coins_ani = useSpring({
-    from: { right: '0%'},
-    to: { right: '10%'},
-    loop:{reverse:true},
-    config: {duration: 3500}
-  })
-
-  const [{ scroll }, set] = useSpring(() => ({ scroll: 0 }))
-  const onScroll = useCallback(e => void set({ scroll: e.target.scrollTop / (window.innerHeight) }), [])
-
-
   return (
     <div className="main-block">
       <section id="head">
@@ -287,11 +243,7 @@ function LandingPage2() {
               </div>
             </div>
             <div className="col-md-3 text-center">
-              <animated.div style={monkeytop}>
-                <animated.div style={rotate10}>
-                  <img className="bonobo" src={bonobo} alt="bonobo" />
-                </animated.div>
-              </animated.div>
+              <img className="bonobo" src={bonobo} alt="bonobo" />
             </div>
           </div>
         </div>
@@ -318,21 +270,7 @@ function LandingPage2() {
         <div className="imgs float-left">
           <img src={el1} width="50%" alt="g6" />
           <img src={el2} width="50%" alt="g7" />
-          <div className="leafsun">
-            <animated.div style={leaf1} className="leaf1">
-              <img src={leafimg1}/>
-            </animated.div>
-            <animated.div style={leaf2} className="leaf2">
-              <img src={leafimg2} />
-            </animated.div>
-              
-            <div onScroll={onScroll}>
-              <animated.div style={sun} className="sun">
-                <img src={sunimg}/>
-              </animated.div>
-            </div>
-            
-          </div>
+          <img className="leftsun" src={leaf_sun} width="100%" alt="leftsun" />
         </div>
       </section>
 
@@ -475,11 +413,7 @@ function LandingPage2() {
       
       <section id="Bonobo">
         <div className="content">
-          <h2><span>How to buy El BONOBO's</span> 
-            <animated.div style={coins_ani} className="coins">
-              <img src={coins} alt="coins" />
-            </animated.div>
-          </h2>
+          <h2><span>How to buy El BONOBO's</span> <img className="coins" src={coins} alt="coins" /></h2>
           <div className="bonobo-content-block">
             <div className="card step-1 col-4">
               <div className="child-card c1">
